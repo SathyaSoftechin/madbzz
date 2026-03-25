@@ -1,0 +1,86 @@
+/* NAVBAR CONTAINER */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+
+  background: linear-gradient(90deg, #0a1a2f, #0b2238);
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255,0.1);
+
+  margin: 20px;
+}
+
+/* LOGO */
+.logo img {
+  height: 60px;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  align-items: center;   /* ✅ FIX ALIGNMENT */
+  gap: 40px;
+  list-style: none;
+}
+
+/* REMOVE DEFAULT LINK STYLE */
+.nav-links a {
+  text-decoration: none;
+  color: #9aa4b2;
+  font-weight: 500;
+
+  display: flex;          /* ✅ IMPORTANT */
+  align-items: center;    /* ✅ vertical center */
+  justify-content: center;
+
+  height: 36px;           /* ✅ FIX HEIGHT */
+  padding: 0 16px;        /* SAME for all */
+
+  border-radius: 20px;
+  transition: 0.3s;
+}
+/* HOVER */
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* ACTIVE LINK (ONLY WHEN CLICKED) */
+.nav-links a.active {
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+}
+
+
+/* NAV LINKS */
+.nav-link {
+  text-decoration: none;
+  color: #9aa4b2;
+  padding: 6px 16px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+/* ACTIVE NAV */
+.nav-link.active {
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+}
+
+/* CONTACT DEFAULT */
+.contact-btn {
+  background: #ffcc00;
+  color: #000;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* CONTACT ACTIVE (IMPORTANT) */
+.contact-btn.active-contact {
+  background: transparent;
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+}

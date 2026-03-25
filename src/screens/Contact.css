@@ -1,0 +1,247 @@
+body {
+  background: #020617;
+  font-family: "Poppins";
+  color: white;
+}
+
+/* HERO */
+.contact-hero {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.contact-hero h1 {
+  font-size: 42px;
+}
+
+.contact-hero span {
+  color: #FFCA00;
+}
+/* 🔥 HERO TEXT PREMIUM */
+.contact-hero h1 {
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.contact-hero p {
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+/* ✨ BADGE GLOW */
+.badge {
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.3);
+}
+
+/* 🌟 PAGE SMOOTH LOOK */
+.contact-page {
+  background: radial-gradient(
+    circle at top right,
+    rgba(250, 204, 21, 0.08),
+    transparent 40%
+  );
+}
+.badge {
+  background: #1e293b;
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: #FFCA00;
+  font-size: 12px;
+}
+
+/* MAIN */
+.contact-main {
+  display: flex;
+  gap: 40px;
+  padding: 40px 100px;
+}
+
+/* FORM */
+.contact-form {
+  flex: 2;
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 15px;
+}
+/* 🔥 PREMIUM GLASS EFFECT */
+.contact-form,
+.info-card {
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+/* ✨ INPUT PREMIUM STYLE */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  background: #020617;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid #FFCA00;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.3);
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  background: #1e293b;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+}
+
+.contact-form textarea {
+  width: 100%;
+  margin-top: 15px;
+  height: 120px;
+}
+
+/* BUTTON */
+.send-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  display: flex;
+  background: #FFCA00;
+  border: none;
+  border-radius: 8px;
+}
+.send-icon {
+  font-size: 16px;
+  stroke-width: 2;
+}
+
+
+/* 🚀 BUTTON PREMIUM */
+.send-btn {
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(250, 204, 21, 0.3);
+}
+
+.send-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(250, 204, 21, 0.5);
+}
+
+/* 🔥 ICON ANIMATION */
+.send-icon {
+  transition: transform 0.3s ease;
+}
+
+.send-btn:hover .send-icon {
+  transform: translateX(5px) rotate(10deg);
+}
+
+/* RIGHT INFO */
+.contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-card {
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+/* ✨ CARD HOVER EFFECT */
+.info-card {
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid rgba(250, 204, 21, 0.3);
+  box-shadow: 0 10px 30px rgba(250, 204, 21, 0.1);
+}
+
+/* 💫 ICON GLOW */
+.info-card svg {
+  font-size: 20px;
+  background: rgba(250, 204, 21, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+.info-card svg {
+  color: #FFCA00;
+}
+
+/* FULL SCREEN OVERLAY */
+.popup-overlay {
+  position: fixed;
+  inset: 0; /* shorthand for top, left, right, bottom */
+
+  background: rgba(2, 6, 23, 0.75);
+  backdrop-filter: blur(8px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+}
+
+/* CENTER POPUP */
+.popup-box {
+  background: #ffffff;
+  color: #020617;
+  padding: 50px 40px;
+  border-radius: 16px;
+  text-align: center;
+
+  width: 500px;
+  max-width: 90%;
+
+  animation: popupScale 0.2s ease;
+}
+
+/* ICON */
+.popup-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(250, 204, 21, 0.2);
+  color: #FFCA00;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  margin: 0 auto 20px;
+
+  font-size: 30px;
+}
+
+/* ANIMATION */
+@keyframes popupScale {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

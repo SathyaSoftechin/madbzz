@@ -1,0 +1,132 @@
+.footer {
+  background: #020617;
+  padding: 60px 80px 30px;
+  color: #94a3b8;
+}
+
+/* CONTAINER */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 50px;
+}
+
+/* LEFT */
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-box img {
+  height: 30px;
+}
+
+.logo-box h3 {
+  color: white;
+}
+
+.logo-box span {
+  color: #FFCA00;
+}
+
+.footer-left p {
+  margin: 15px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* SOCIAL */
+.socials {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* ROUND BOX */
+.socials a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;   /* ICON SIZE */
+  transition: all 0.3s ease;
+}
+
+/* EXACT BRAND COLORS */
+.socials a:nth-child(1) svg {
+  color: #1877f2; /* Facebook */
+}
+
+.socials a:nth-child(2) svg {
+  color: #e1306c; /* Instagram */
+}
+
+.socials a:nth-child(3) svg {
+  color: #0a66c2; /* LinkedIn */
+}
+
+/* HOVER */
+.socials a:hover {
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* COLUMNS */
+.footer-col h4 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* NEWSLETTER */
+.newsletter input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #101922;
+  color: white;
+}
+
+.newsletter button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  background: #FFCA00;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  margin-top: 40px;
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.footer-bottom span {
+  margin-left: 15px;
+  cursor: pointer;
+}
