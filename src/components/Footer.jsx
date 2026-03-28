@@ -1,5 +1,6 @@
 import "./Footer.css";
 import logo from "../assets/logo.png";
+import { NavLink } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (
@@ -47,10 +48,10 @@ export default function Footer() {
         {/* COMPANY */}
         <div className="footer-col">
           <h4>Company</h4>
-          <p>Our Services</p>
-          <p>Our Work</p>
-          <p>About Us</p>
-          <p>Contact</p>
+          <NavLink to="/services">Our Services</NavLink>
+  <NavLink to="/impact">Our Impact</NavLink>
+  <NavLink to="/about">About Us</NavLink>
+  <NavLink to="/contact">Contact</NavLink>
         </div>
 
         {/* NEWSLETTER */}

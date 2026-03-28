@@ -741,3 +741,200 @@ background: #0F172A;   /* 🔥 main color */
 .cta-box button:hover {
   background: #eab308;
 }
+
+/* =========================
+   GLOBAL FIX
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   HERO RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-left p {
+    margin: auto;
+  }
+}
+
+/* =========================
+   MOBILE HERO
+========================= */
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero-left h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .hero-left p {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+}
+
+/* =========================
+   PHONE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .phone {
+    width: 170px;
+    height: 340px;
+    transform: rotate(0deg);
+  }
+}
+
+/* =========================
+   BRANDS
+========================= */
+@media (max-width: 768px) {
+  .brands-title {
+    font-size: 16px;
+  }
+
+  .pill {
+    min-width: 90px;
+    padding: 0 15px;
+  }
+
+  .pill img {
+    height: 16px;
+  }
+}
+
+/* =========================
+   SERVICES GRID
+========================= */
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   RESULTS GRID
+========================= */
+@media (max-width: 768px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .results-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* =========================
+   TIMELINE FIX
+========================= */
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .step {
+    width: 100%;
+  }
+}
+
+/* =========================
+   WHY SECTION
+========================= */
+@media (max-width: 768px) {
+  .why-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .why-left,
+  .why-right {
+    width: 100%;
+  }
+
+  .why-left {
+    grid-template-columns: 1fr;
+  }
+
+  .shift {
+    transform: none;
+  }
+
+  .why-right h2 {
+    font-size: 26px;
+  }
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+@media (max-width: 900px) {
+  .test-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .test-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   CTA
+========================= */
+@media (max-width: 768px) {
+  .cta-box {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .cta-box h2 {
+    font-size: 26px;
+  }
+
+  .cta-box p {
+    margin: auto;
+  }
+}

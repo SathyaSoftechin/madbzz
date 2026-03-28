@@ -477,3 +477,146 @@
 .cta-btn:hover {
   background: #eab308;
 }
+
+
+/* =========================
+   SERVICES PAGE RESPONSIVE
+========================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+  .service-hero {
+    gap: 30px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-section {
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .timeline-item {
+    width: 20%;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  /* HERO */
+  .service-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .service-hero-left,
+  .service-hero-right {
+    width: 100%;
+  }
+
+  .service-hero-left img {
+    max-width: 300px;
+    transform: rotate(0deg);
+  }
+
+  .hero-right h1 {
+    font-size: 28px;
+  }
+
+  .hero-right p {
+    margin: auto;
+    font-size: 14px;
+  }
+
+  .service-hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* SERVICE GRID */
+  .service-grid-section {
+    padding: 20px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* TIMELINE */
+  .timeline {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+
+  .timeline-item {
+    width: 100%;
+  }
+
+  /* IMPACT */
+  .impact-section {
+    padding: 20px;
+  }
+
+  .impact-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* WHY SECTION */
+  .why-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .why-left {
+    grid-template-columns: 1fr;
+  }
+
+  .why-right h2 {
+    font-size: 24px;
+  }
+
+  /* USERS */
+  .users img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* CTA */
+  .cta-section {
+    padding: 20px;
+  }
+
+  .cta-box-section {
+    padding: 30px 20px;
+  }
+
+  .cta-box h2 {
+    font-size: 24px;
+  }
+
+  .cta-box p {
+    margin: auto;
+  }
+}

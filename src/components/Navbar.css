@@ -84,3 +84,172 @@
   color: #ffcc00;
   border: 1px solid #ffcc00;
 }
+
+
+/* =========================
+   NAVBAR RESPONSIVE
+========================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+}
+/* IMPORTANT: anchor for absolute items */
+.navbar {
+  position: relative;
+}
+
+/* HAMBURGER hidden in desktop */
+.menu-toggle {
+  display: none;
+}
+
+/* =========================
+   MOBILE FIX ONLY
+========================= */
+@media (max-width: 768px) {
+
+  /* SHOW ☰ */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 26px;
+    color: #FFCA00;
+    cursor: pointer;
+  }
+
+  /* MOVE CONTACT BUTTON */
+  .contact-btn {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+}
+
+/* =========================
+   MOBILE (SAFE FIX)
+========================= */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 12px 15px;
+    border-radius: 30px;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  /* SHOW ☰ */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* MOVE CONTACT BUTTON */
+  .contact-btn {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  /* HIDE MENU */
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 15px;
+
+    background: #0f172a;
+    border-radius: 12px;
+    padding: 15px;
+
+    flex-direction: column;
+    width: 200px;
+    gap: 10px;
+
+    display: none;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    z-index: 1000;
+  }
+
+  /* SHOW MENU */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 10px;
+    justify-content: flex-start;
+  }
+}
+  /* KEEP NAVBAR SAME (no flex changes) */
+  .navbar {
+    padding: 12px 15px;
+    border-radius: 30px;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  /* DROPDOWN MENU */
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 15px;
+
+    background: #0f172a;
+    border-radius: 12px;
+    padding: 15px;
+
+    flex-direction: column;
+    width: 200px;
+    gap: 10px;
+
+    display: none;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 10px;
+    justify-content: flex-start;
+  }
+}

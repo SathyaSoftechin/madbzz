@@ -297,3 +297,109 @@ background: #0F172A;   /* 🔥 main color */
 .cta-box button:hover {
   background: #eab308;
 }
+
+
+
+/* =========================
+   ABOUT PAGE RESPONSIVE
+========================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+  .about-hero {
+    padding: 40px 40px;
+    gap: 30px;
+  }
+
+  .about-hero-left h1 {
+    font-size: 40px;
+  }
+
+  .experts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  /* HERO */
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .about-hero-left,
+  .about-hero-right {
+    width: 100%;
+  }
+
+  .about-hero-left h1 {
+    font-size: 28px;
+  }
+
+  .about-hero-right img {
+    width: 260px;
+    margin-top: 20px;
+  }
+
+  .about-hero-left p {
+    font-size: 14px;
+  }
+
+  /* STORY CARDS */
+  .story-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .story-card {
+    width: 100%;
+  }
+
+  /* EXPERTS */
+  .experts {
+    padding: 40px 20px;
+  }
+
+  .experts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expert img {
+    height: 200px;
+  }
+
+  /* BRANDS */
+  .brands-title {
+    font-size: 16px;
+  }
+
+  .pill {
+    min-width: 90px;
+    padding: 0 15px;
+  }
+
+  .pill img {
+    height: 16px;
+  }
+
+  /* CTA */
+  .cta-box {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .cta-box h2 {
+    font-size: 24px;
+  }
+
+  .cta-box p {
+    margin: auto;
+  }
+}

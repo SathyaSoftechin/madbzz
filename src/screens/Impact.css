@@ -200,3 +200,117 @@
 .cta-box button:hover {
   background: #eab308;
 }
+
+
+
+/* =========================
+   IMPACT PAGE RESPONSIVE
+========================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+  .work-hero {
+    padding: 60px 40px;
+  }
+
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 40px;
+  }
+
+  .work-hero h1 {
+    font-size: 32px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  /* HERO */
+  .work-hero {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .work-hero h1 {
+    font-size: 26px;
+  }
+
+  .work-hero p {
+    font-size: 14px;
+    margin: auto;
+  }
+
+  /* FILTER BUTTONS */
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .filters button {
+    margin: 0;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  /* GRID */
+  .work-grid {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+  }
+
+  /* CARD */
+  .work-card img {
+    height: 180px;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-content h3 {
+    font-size: 16px;
+  }
+
+  .card-content p {
+    font-size: 13px;
+  }
+
+  /* BRANDS */
+  .brands-title {
+    font-size: 16px;
+  }
+
+  .pill {
+    min-width: 90px;
+    padding: 0 15px;
+  }
+
+  .pill img {
+    height: 16px;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 40px 20px;
+  }
+
+  .cta-box {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .cta-box h2 {
+    font-size: 24px;
+  }
+
+  .cta-box p {
+    margin: auto;
+  }
+}
