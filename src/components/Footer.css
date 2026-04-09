@@ -193,3 +193,43 @@
     margin-left: 0;
   }
 }
+
+/* =========================
+   TABLET FOOTER (SAFE)
+========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* CONTAINER */
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr); /* 4 → 2 */
+    gap: 40px;
+  }
+
+  /* ALIGN LEFT SIDE */
+  .footer-left {
+    max-width: 100%;
+  }
+
+  /* TEXT */
+  .footer-left p {
+    font-size: 14px;
+  }
+
+  /* SOCIAL ICONS */
+  .socials {
+    gap: 15px;
+  }
+
+  /* COLUMNS */
+  .footer-col {
+    align-items: flex-start; /* keep desktop feel */
+  }
+
+  /* BOTTOM */
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+}
