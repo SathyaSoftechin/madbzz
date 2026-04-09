@@ -964,6 +964,10 @@ background: #0F172A;   /* 🔥 main color */
   .hero-left p {
     margin: auto;
   }
+ .hero-buttons {
+    justify-content: center;   /* 🔥 MAIN FIX */
+    align-items: center;
+  }
 
   /* SERVICES */
   .services-grid {
