@@ -2,7 +2,7 @@ import "./Services.css";
 import { FaBullhorn, FaSearch, FaAd, FaPen, FaUsers, FaCode, FaEnvelope, FaChartLine, FaPenNib  } from "react-icons/fa";
 import { FaShieldAlt, FaClipboardList, FaHandshake } from "react-icons/fa";
 import serviceshero from "../assets/services-hero.png";
-import impact1 from "../assets/impact1.png";
+import impact1 from "../assets/result1.png";
 import impact2 from "../assets/impact2.png";
 import impact3 from "../assets/impact3.png";
 
