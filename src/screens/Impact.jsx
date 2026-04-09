@@ -1,14 +1,17 @@
 import "./Impact.css";
-import spotify from "../assets/spotify.png";
-import google from "../assets/google.png";
-import uber from "../assets/uber.png";
-import microsoft from "../assets/microsoft.png";
-import shopify from "../assets/shopify.png";
+import { useState } from "react";
+import spotify from "../assets/aurovaoils.png";
+import google from "../assets/hlopg.png";
+import uber from "../assets/sathyasofttech.png";
+import microsoft from "../assets/srreality.png";
+import shopify from "../assets/yaritrip.png";
 import work1 from "../assets/work1.png";
 import work2 from "../assets/work2.png";
 import work3 from "../assets/work3.png";
-
+import { useNavigate } from "react-router-dom";
 export default function Work() {
+  const navigate = useNavigate();
+  const [activeFilter, setActiveFilter] = useState("all");
   return (
     <div className="work">
 
@@ -25,11 +28,34 @@ export default function Work() {
 
         {/* FILTER BUTTONS */}
         <div className="filters">
-          <button className="active">All Projects</button>
-          <button>Social Media</button>
-          <button>Paid Advertising</button>
-          <button>Influencer Marketing</button>
-        </div>
+  <button 
+    className={activeFilter === "all" ? "active" : ""}
+    onClick={() => setActiveFilter("all")}
+  >
+    All Projects
+  </button>
+
+  <button 
+    className={activeFilter === "social" ? "active" : ""}
+    onClick={() => setActiveFilter("social")}
+  >
+    Social Media
+  </button>
+
+  <button 
+    className={activeFilter === "paid" ? "active" : ""}
+    onClick={() => setActiveFilter("paid")}
+  >
+    Paid Advertising
+  </button>
+
+  <button 
+    className={activeFilter === "influencer" ? "active" : ""}
+    onClick={() => setActiveFilter("influencer")}
+  >
+    Influencer Marketing
+  </button>
+</div>
       </section>
 
       {/* CARDS */}
@@ -68,18 +94,18 @@ export default function Work() {
    <div className="brands-section">
   <p className="brands-title">TRUSTED BY GLOBAL INNOVATORS</p>
 <div className="brands-row">
-<div className="pill"><img src={spotify} /></div>
-    <div className="pill"><img src={google} /></div>
-    <div className="pill"><img src={uber} /></div>
-    <div className="pill"><img src={microsoft} /></div>
-    <div className="pill"><img src={shopify} /></div>
+<div className="impact-pill"><img src={spotify} /></div>
+    <div className="impact-pill"><img src={google} /></div>
+    <div className="impact-pill"><img src={uber} /></div>
+    <div className="impact-pill"><img src={microsoft} /></div>
+    <div className="impact-pill"><img src={shopify} /></div>
         </div>
      </div>
 
       {/* CTA */}
- <section className="cta">
+ <section className="impact-cta">
 
-      <div className="cta-box">
+      <div className="impact-cta-box">
 
         <h2>
           Ready to scale your <span>brand?</span>
@@ -89,7 +115,7 @@ export default function Work() {
           Schedule a free 30-minute strategy consultation with our experts and discover your untapped growth potential.
         </p>
 
-        <button>Schedule Consultation</button>
+        <button onClick={() => navigate("/contact")}>Schedule Consultation</button>
 
       </div>
 

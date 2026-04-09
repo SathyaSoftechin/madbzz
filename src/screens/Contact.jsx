@@ -48,14 +48,13 @@ export default function Contact() {
             <input placeholder="Company Name" />
 
             <select>
-              <option>Service Interested In</option>
+              <option>Service We Provide</option>
               <option>SEO</option>
+              <option>Performance Marketing </option>
+              <option>Meta & Google Ads</option>
               <option>Social Media</option>
-            </select>
-
-            <select>
-              <option>Estimated Budget</option>
-              <option>$1k - $5k</option>
+              <option> Influencer Marketing</option>
+              <option> Ads Shoots</option>
             </select>
 
           </div>
@@ -76,7 +75,7 @@ export default function Contact() {
             <FaMapMarkerAlt />
             <div>
               <h4>Our Office</h4>
-              <p>123 Creative Way, Suite 500</p>
+              <p>Plot No. 446, Hitech City Road Divert, Ayyappa Society,<br /> VIP Hills, Jaihind Enclave, Madhapur,<br /> Hyderabad, Telangana 500081</p>
             </div>
           </div>
 
@@ -84,7 +83,7 @@ export default function Contact() {
             <FaEnvelope />
             <div>
               <h4>Email Us</h4>
-              <p>hello@agency.com</p>
+              <p>madbzz.agency@gmail.com</p>
             </div>
           </div>
 
@@ -92,7 +91,7 @@ export default function Contact() {
             <FaPhone />
             <div>
               <h4>Call Us</h4>
-              <p>+1 415 555 0123</p>
+              <p>9117177979</p>
             </div>
           </div>
 

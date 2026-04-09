@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="footer-left">
           <div className="logo-box">
             <img src={logo} alt="logo" />
-            <h3>MadBuzz<span>.</span></h3>
+            <h3>MadBzz<span>.</span></h3>
           </div>
 
           <p>
@@ -25,7 +25,7 @@ export default function Footer() {
     <FaFacebook />
   </a>
 
-  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+  <a href="https://www.instagram.com/mad_bzz/" target="_blank" rel="noreferrer">
     <FaInstagram />
   </a>
 
@@ -49,25 +49,16 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Company</h4>
           <NavLink to="/services">Our Services</NavLink>
-  <NavLink to="/impact">Our Impact</NavLink>
+  <NavLink to="/impact">Our Work</NavLink>
   <NavLink to="/about">About Us</NavLink>
   <NavLink to="/contact">Contact</NavLink>
-        </div>
-
-        {/* NEWSLETTER */}
-        <div className="footer-col newsletter">
-          <h4>Newsletter</h4>
-          <p>Get the latest marketing insights delivered to your inbox.</p>
-
-          <input type="email" placeholder="Email address" />
-          <button>Subscribe</button>
         </div>
 
       </div>
 
       {/* BOTTOM */}
       <div className="footer-bottom">
-        <p>© 2026 MadBuzz Digital Agency. All rights reserved.</p>
+        <p>© 2026 MadBzz Digital Agency. All rights reserved.</p>
 
         <div>
           <span>Privacy Policy</span>

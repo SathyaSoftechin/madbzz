@@ -1,8 +1,7 @@
 /* HERO BACKGROUND */
 .hero {
   padding: 20px 20px;
-  background: radial-gradient(circle at 75% 40%, rgba(250,204,21,0.15), transparent 20%),
-              linear-gradient(90deg, #101922, #101922);
+  background: radial-gradient(circle at 75% 40%, rgba(250,204,21,0.15), transparent 25%)
 }
 
 /* CONTAINER */
@@ -158,8 +157,7 @@
 /* SECTION */
 
 .brands-section {
-     background: #101922;   /* 🔥 exact dark color */
-  padding: 30px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -182,11 +180,11 @@
 }
 
 /* 🔥 PILL FIX */
-.pill {
-  background: #f1f5f9;   /* slightly better than #f8fafc */
+.home-pill {
+  background: #f1f5f9;
 
-  height: 44px;          /* little bigger */
-  padding: 0 28px;       /* more breathing space */
+  height: 70px;
+  padding: 0 35px;
 
   border-radius: 999px;
 
@@ -194,27 +192,20 @@
   align-items: center;
   justify-content: center;
 
-  min-width: 120px;
+  min-width: 140px;
 
-  /* 🔥 better shadow like UI */
   box-shadow: 
-    0 4px 12px rgba(0,0,0,0.12),
+    0 6px 16px rgba(0,0,0,0.15),
     inset 0 1px 0 rgba(255,255,255,0.6);
 }
 
-/* LOGO */
-.pill img {
-  height: 20px;   /* 🔥 increase from 16px */
-  width: auto;
-  object-fit: contain;
+.home-pill img {
+  height: 40px;
 }
-
-
 
 /* SERVICES */
 .services {
   padding: 20px 20px;
-  background: #101922;
   color: white;
 }
 
@@ -299,7 +290,6 @@
 
 .results {
   padding: 20px 20px;
-  background: #101922;
   color: white;
 }
 
@@ -360,7 +350,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 25px;
+  padding: 65px;
 
   background: linear-gradient(
     to top,
@@ -400,7 +390,7 @@
 /* PROCESS */
 .process {
   padding: 20px 20px;
-  background: #101922;
+ 
   color: white;
   text-align: center;
 }
@@ -426,36 +416,38 @@
 }
 
 /* TIMELINE */
-.timeline {
-  margin-top: 60px;
+.process .timeline {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
   position: relative;
+  align-items: center;
+  padding-top: 40px;
 }
 
-/* LINE */
-.timeline::before {
+/* .process .timeline::before {
   content: "";
   position: absolute;
-  top: 30px;
   left: 5%;
   width: 90%;
   height: 2px;
   background: #1e293b;
-}
+} */
 
 /* STEP */
-.step {
+
+.process .step {
   width: 22%;
   text-align: center;
   position: relative;
+  margin-top: 15px;
+  z-index: 1;
 }
 
-/* CIRCLE */
-.circle {
-  width: 50px;
-  height: 50px;
-  background: #FFCA00;
+/* 🔥 CIRCLE */
+.process .circle {
+  width: 80px;
+  height: 80px;
+  background: #FFC107;
   border-radius: 50%;
 
   display: flex;
@@ -464,24 +456,30 @@
 
   font-weight: bold;
   margin: auto;
-  margin-bottom: 15px;
-}
+  margin-bottom: 5px;
 
+  position: relative;
+  z-index: 2; 
+}
+.process .circle {
+  font-size: 24px;   /* 🔥 increase number size */
+}
 /* TEXT */
 .step h3 {
   font-size: 14px;
   margin-bottom: 8px;
+
 }
 
 .step p {
   font-size: 12px;
   color: #94a3b8;
+  margin-bottom: 8px;
 }
 /* WHY */
 /* SECTION */
 .why {
   padding: 35px 20px;
-  background: #101922;
   color: white;
 }
 
@@ -506,7 +504,6 @@
 
 /* CARD */
 .why-card {
-  background: #101922;
   padding: 25px;
   border-radius: 16px;
 
@@ -597,7 +594,6 @@
 
 .testimonials {
   padding: 10px 20px;
-  background: #101922;
   color: white;
   text-align: center;
 }
@@ -678,19 +674,24 @@
 /* ROLE */
 .user span {
   font-size: 12px;
-  color: #94a3b8;
+  color: #FFCA00;
 }
 
 /* CTA */
 
-.cta {
-  padding: 20px 20px;
-  background: #101922;
+.home-cta {
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  text-align: center;
+  padding: 80px 20px;
 }
 
+
 /* BOX */
-.cta-box {
-  max-width: 1100px;
+.home-cta-box {
+    width: 100%;
+  /* max-width: 1100px; */
   margin: auto;
 
   padding: 60px;
@@ -702,26 +703,25 @@ background: #0F172A;   /* 🔥 main color */
 }
 
 /* TITLE */
-.cta-box h2 {
+.home-cta-box h2 {
   font-size: 36px;
   font-weight: 700;
 }
 
-.cta-box span {
+.home-cta-box span {
   color: #FFCA00;
 }
 
 /* TEXT */
-.cta-box p {
+.home-cta-box p {
   margin-top: 15px;
   color: #94a3b8;
-  max-width: 500px;
   line-height: 1.6;
   font-size: 14px;
 }
 
 /* BUTTON */
-.cta-box button {
+.home-cta-box button {
   margin-top: 25px;
 
   background: #FFCA00;
@@ -738,7 +738,7 @@ background: #0F172A;   /* 🔥 main color */
 }
 
 /* HOVER */
-.cta-box button:hover {
+.home-cta-box button:hover {
   background: #eab308;
 }
 
@@ -821,13 +821,13 @@ background: #0F172A;   /* 🔥 main color */
     font-size: 16px;
   }
 
-  .pill {
-    min-width: 90px;
-    padding: 0 15px;
+  home-pill {
+    min-width: 120px;
+    padding: 0 20px;
   }
 
-  .pill img {
-    height: 16px;
+ home-pill img {
+    height: 20px;   /* change from 20px */
   }
 }
 
@@ -925,16 +925,16 @@ background: #0F172A;   /* 🔥 main color */
    CTA
 ========================= */
 @media (max-width: 768px) {
-  .cta-box {
+  .home-cta-box {
     padding: 30px 20px;
     text-align: center;
   }
 
-  .cta-box h2 {
+.home-cta-box h2 {
     font-size: 26px;
   }
 
-  .cta-box p {
+ .home-cta-box p {
     margin: auto;
   }
 }

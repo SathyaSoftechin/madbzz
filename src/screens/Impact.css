@@ -45,8 +45,9 @@
 /* GRID */
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(3, 300px); /* 🔥 fixed card size */
+  justify-content: flex-start;              /* 🔥 LEFT ALIGN */
+  gap: 30px;
   padding: 40px 100px;
 }
 
@@ -85,8 +86,7 @@
 }
 /* BRANDS */
 .brands-section {
-     background: #101922;   /* 🔥 exact dark color */
-  padding: 60px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -109,70 +109,62 @@
 }
 
 /* 🔥 PILL FIX */
-.pill {
-  background: #f1f5f9;   /* slightly better than #f8fafc */
-
-  height: 44px;          /* little bigger */
-  padding: 0 28px;       /* more breathing space */
-
+.impact-pill {
+  background: #f1f5f9;
+  height: 70px;
+  padding: 0 35px;
   border-radius: 999px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  min-width: 120px;
-
-  /* 🔥 better shadow like UI */
-  box-shadow: 
-    0 4px 12px rgba(0,0,0,0.12),
-    inset 0 1px 0 rgba(255,255,255,0.6);
+  min-width: 140px;
 }
 
-/* LOGO */
-.pill img {
-  height: 20px;   /* 🔥 increase from 16px */
+.impact-pill img {
+  height: 40px;
   width: auto;
-  object-fit: contain;
+  display: block;
 }
 
 
-
 /* CTA */
 /* CTA */
 
-.cta {
+.impact-cta {
   padding: 80px 20px;
-  background: #101922;
+
+  display: flex;
+  justify-content: center;   /* center box horizontally */
+  align-items: center;       /* center vertically */
+  text-align: center;
 }
-
 /* BOX */
-.cta-box {
-  max-width: 1100px;
-  margin: auto;
+.impact-cta-box {
+  width: 100%;
 
+  margin: auto;
   padding: 60px;
   border-radius: 24px;
 
- background: #0F172A;   /* 🔥 main color */
-  border: 1px solid #334155; 
+  background: #0F172A;
+  border: 1px solid #334155;
 
   color: white;
+  text-align: center;   /* center everything inside */
 }
-
 /* TITLE */
-.cta-box h2 {
+.impact-cta-box h2 {
   font-size: 36px;
   font-weight: 700;
 }
 
-.cta-box span {
+.impact-cta-box span {
   color: #FFCA00;
 }
 
 /* TEXT */
-.cta-box p {
-  margin-top: 15px;
+.impact-cta-box p {
+  margin: 15px auto 0;   /* 🔥 centers the text block */
   color: #94a3b8;
   max-width: 500px;
   line-height: 1.6;
@@ -180,7 +172,7 @@
 }
 
 /* BUTTON */
-.cta-box button {
+.impact-cta-box button {
   margin-top: 25px;
 
   background: #FFCA00;
@@ -197,7 +189,7 @@
 }
 
 /* HOVER */
-.cta-box button:hover {
+.impact-cta-box button:hover {
   background: #eab308;
 }
 
@@ -287,30 +279,30 @@
     font-size: 16px;
   }
 
-  .pill {
+  .impact-pill {
     min-width: 90px;
     padding: 0 15px;
   }
 
-  .pill img {
+  .impact-pill img {
     height: 16px;
   }
 
   /* CTA */
-  .cta {
+ .impact-cta  {
     padding: 40px 20px;
   }
 
-  .cta-box {
+  .impact-cta-box {
     padding: 30px 20px;
     text-align: center;
   }
 
-  .cta-box h2 {
+  .impact-cta-box h2 {
     font-size: 24px;
   }
 
-  .cta-box p {
+  .impact-cta-box p {
     margin: auto;
   }
 }

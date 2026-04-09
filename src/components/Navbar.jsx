@@ -3,8 +3,11 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 import { useState } from "react";
+import {  useLocation } from "react-router-dom";
 
 export default function Navbar() {
+  const location = useLocation();
+
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="nav-wrapper">
@@ -27,12 +30,20 @@ export default function Navbar() {
             Home
           </NavLink>
 
-          <NavLink to="/about" className={({isActive}) => isActive ? "active" : ""} onClick={() => setMenuOpen(false)}>
-            About Us
-          </NavLink>
-
+     <NavLink
+  to="/about"
+  className={() =>
+    location.pathname === "/about" ||
+    location.pathname === "/expert"
+      ? "active"
+      : ""
+  }
+  onClick={() => setMenuOpen(false)}
+>
+  About Us
+</NavLink>
           <NavLink to="/impact" className={({isActive}) => isActive ? "active" : ""} onClick={() => setMenuOpen(false)}>
-            Our Impact
+            Our Work
           </NavLink>
 
           <NavLink to="/services" className={({isActive}) => isActive ? "active" : ""} onClick={() => setMenuOpen(false)}>

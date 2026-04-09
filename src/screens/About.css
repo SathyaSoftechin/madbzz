@@ -77,7 +77,7 @@
 /* CARDS */
 .story-cards {
   display: flex;
-  gap: 40px;
+  gap: 140px;
   margin-top: 40px;
   justify-content: center;
 }
@@ -130,9 +130,10 @@
 /* EXPERTS */
 /* SECTION */
 .experts {
-  padding: 60px 0;
+  padding: 20px 0;
   max-width: 1100px;     /* 🔥 LIMIT WIDTH */
-  margin: auto;          /* 🔥 CENTER */
+  margin: auto; 
+   text-align: center;         /* 🔥 CENTER */
 }
 
 /* TITLE */
@@ -149,8 +150,9 @@
 /* GRID */
 .experts-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;   /* 🔥 more breathing space */
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center; /* centers grid */
+  gap: 62px;
 }
 
 /* CARD */
@@ -160,16 +162,18 @@
 
 /* IMAGE (IMPORTANT FIX) */
 .expert img {
+  display: block;          /* 🔥 important */
+  margin: 0 auto 8px;      /* centers image horizontally */
   width: 100%;
-  height: 240px;       /* 🔥 smaller like UI */
+  max-width: 240px;        /* optional: keeps image nicely sized */
+  height: 240px;
   object-fit: cover;
   border-radius: 18px;
-  margin-bottom: 8px; 
 }
 
 /* NAME */
 .expert h3 {
-margin: 8px 0 4px; 
+  margin: 8px 0 4px; 
   font-size: 16px;
   font-weight: 600;
 }
@@ -183,7 +187,6 @@ margin: 8px 0 4px;
 
 /* BRANDS */
 .brands-section {
-     background: #101922;   /* 🔥 exact dark color */
   padding: 20px 0;
   text-align: center;
 }
@@ -207,11 +210,11 @@ margin: 8px 0 4px;
 }
 
 /* 🔥 PILL FIX */
-.pill {
-  background: #f1f5f9;   /* slightly better than #f8fafc */
+.about-pill {
+  background: #f1f5f9;
 
-  height: 44px;          /* little bigger */
-  padding: 0 28px;       /* more breathing space */
+  height: 70px;              /* bigger */
+  padding: 0 35px;
 
   border-radius: 999px;
 
@@ -219,19 +222,16 @@ margin: 8px 0 4px;
   align-items: center;
   justify-content: center;
 
-  min-width: 120px;
+  min-width: 140px;
 
-  /* 🔥 better shadow like UI */
   box-shadow: 
-    0 4px 12px rgba(0,0,0,0.12),
+    0 6px 16px rgba(0,0,0,0.15),
     inset 0 1px 0 rgba(255,255,255,0.6);
 }
 
-/* LOGO */
-.pill img {
-  height: 20px;   /* 🔥 increase from 16px */
+.about-pill img {
+  height: 40px;
   width: auto;
-  object-fit: contain;
 }
 
 
@@ -239,14 +239,17 @@ margin: 8px 0 4px;
 /* CTA */
 /* CTA */
 
-.cta {
-  padding: 20px 20px;
-  background: #101922;
+.about-cta {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically (if height given) */
+  text-align: center;        /* center text inside */
 }
-
 /* BOX */
-.cta-box {
-  max-width: 1100px;
+.about-cta-box {
+    width: 100%;
+  /* max-width: 1100px; */
   margin: auto;
 
   padding: 60px;
@@ -258,26 +261,25 @@ background: #0F172A;   /* 🔥 main color */
 }
 
 /* TITLE */
-.cta-box h2 {
+.about-cta-box h2 {
   font-size: 36px;
   font-weight: 700;
 }
 
-.cta-box span {
+.about-cta-box span {
   color: #FFCA00;
 }
 
 /* TEXT */
-.cta-box p {
+.about-cta-box p {
   margin-top: 15px;
   color: #94a3b8;
-  max-width: 500px;
   line-height: 1.6;
   font-size: 14px;
 }
 
 /* BUTTON */
-.cta-box button {
+.about-cta-box button {
   margin-top: 25px;
 
   background: #FFCA00;
@@ -294,7 +296,7 @@ background: #0F172A;   /* 🔥 main color */
 }
 
 /* HOVER */
-.cta-box button:hover {
+.about-cta-box button:hover {
   background: #eab308;
 }
 
@@ -317,7 +319,7 @@ background: #0F172A;   /* 🔥 main color */
   }
 
   .experts-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -380,26 +382,27 @@ background: #0F172A;   /* 🔥 main color */
     font-size: 16px;
   }
 
-  .pill {
+
+  about-pill {
     min-width: 90px;
     padding: 0 15px;
   }
 
-  .pill img {
+ about-pill img {
     height: 16px;
   }
 
   /* CTA */
-  .cta-box {
+  .about-cta-box {
     padding: 30px 20px;
     text-align: center;
   }
 
-  .cta-box h2 {
+  .about-cta-box h2 {
     font-size: 24px;
   }
 
-  .cta-box p {
+  .about-cta-box p {
     margin: auto;
   }
 }

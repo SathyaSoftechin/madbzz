@@ -112,27 +112,6 @@
 .footer-col a:hover {
   color: #FFCA00;
 }
-/* NEWSLETTER */
-.newsletter input {
-  width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  border-radius: 8px;
-  border: none;
-  background: #101922;
-  color: white;
-}
-
-.newsletter button {
-  margin-top: 12px;
-  width: 100%;
-  padding: 12px;
-  background: #FFCA00;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-}
 
 /* BOTTOM */
 .footer-bottom {

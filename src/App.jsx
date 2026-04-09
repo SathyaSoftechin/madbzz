@@ -3,9 +3,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 
-import { Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 import Home from "./screens/Home";
 import About from "./screens/About";
+import Expert from "./screens/Expert";
 import Impact from "./screens/Impact";
 import Services from "./screens/Services";
 import Contact from "./screens/Contact";
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
          <Route path="/about" element={<About />} />
+          <Route path="/expert" element={<Expert />} />
            <Route path="/impact" element={<Impact />} />
             <Route path="/services" element={<Services />} />
               <Route path="/contact" element={<Contact />} />

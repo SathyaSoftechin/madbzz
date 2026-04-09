@@ -10,17 +10,14 @@ import screen77 from "../assets/screen77.png";
 import screen88 from "../assets/screen88.png";
 import React, { useState, useEffect } from "react";
 
-import spotify from "../assets/spotify.png";
-import google from "../assets/google.png";
-import uber from "../assets/uber.png";
-import microsoft from "../assets/microsoft.png";
-import shopify from "../assets/shopify.png";
+import spotify from "../assets/aurovaoils.png";
+import google from "../assets/hlopg.png";
+import uber from "../assets/sathyasofttech.png";
+import microsoft from "../assets/srreality.png";
+import shopify from "../assets/yaritrip.png";
 import result1 from "../assets/result1.png";
 import result2 from "../assets/result2.png";
 
-import user1 from "../assets/user1.png";
-import user2 from "../assets/user2.png";
-import user3 from "../assets/user3.png";
 import {
   FaShareAlt,
   FaPenNib,
@@ -35,7 +32,11 @@ FaCheckCircle,
   FaStar
 } from "react-icons/fa";
 
+import { useNavigate } from "react-router-dom";
+
 export default function Home() {
+  const navigate = useNavigate();
+
   const screens = [
     screen11, screen22, screen33, screen44,
     screen55, screen66, screen77, screen88
@@ -74,10 +75,21 @@ export default function Home() {
               content, and ROI-focused advertising campaigns tailored for modern growth.
             </p>
 
-            <div className="hero-buttons">
-              <button className="btn-primary">Get Started →</button>
-              <button className="btn-secondary">View Our Work</button>
-            </div>
+          <div className="hero-buttons">
+  <button
+    className="btn-primary"
+    onClick={() => navigate("/contact")}
+  >
+    Get Started →
+  </button>
+
+  <button
+    className="btn-secondary"
+    onClick={() => navigate("/impact")}
+  >
+    View Our Work
+  </button>
+</div>
           </div>
     <div className="hero-right">
         <div className="phone">
@@ -97,17 +109,17 @@ export default function Home() {
   <p className="brands-title">TRUSTED BY GLOBAL INNOVATORS</p>
 
   <div className="brands-row">
- <div className="pill"><img src={spotify} /></div>
-    <div className="pill"><img src={google} /></div>
-    <div className="pill"><img src={uber} /></div>
-    <div className="pill"><img src={microsoft} /></div>
-    <div className="pill"><img src={shopify} /></div>
+ <div className="home-pill"><img src={spotify} /></div>
+    <div className="home-pill"><img src={google} /></div>
+    <div className="home-pill"><img src={uber} /></div>
+    <div className="home-pill"><img src={microsoft} /></div>
+    <div className="home-pill"><img src={shopify} /></div>
 
   </div>
 </div>
 
       {/* SERVICES */}
-        <section className="services">
+        <section className="process">
 
       <div className="services-container">
 
@@ -178,7 +190,12 @@ export default function Home() {
             </p>
           </div>
 
-          <span className="view-all">View all Our Work →</span>
+         <span 
+  className="view-all"
+  onClick={() => navigate("/impact")}
+>
+  View all Our Work →
+</span>
         </div>
 
         {/* GRID */}
@@ -189,10 +206,10 @@ export default function Home() {
             <img src={result1} alt="result" />
 
             <div className="overlay">
-              <span className="tag">E-COMMERCE GROWTH</span>
+              <span className="tag">JEWELLERY CAMPAIGN</span>
 
               <h3>
-                Luminary Skin: +300% Organic Reach in 6 Months
+               Haraa Gold & Diamonds
               </h3>
 
               <div className="stats">
@@ -213,10 +230,10 @@ export default function Home() {
             <img src={result2} alt="result" />
 
             <div className="overlay">
-              <span className="tag">B2B SAAS CAMPAIGN</span>
+              <span className="tag">BRANDING AGENCY CAMPAIGN</span>
 
               <h3>
-                CloudStack: Reducing CPC by 45% While Scaling
+               Sr Media Branding Agency
               </h3>
 
               <div className="stats">
@@ -346,84 +363,81 @@ export default function Home() {
     </section>
 
       {/* TESTIMONIALS */}
-       <section className="testimonials">
+<section className="testimonials">
 
-      <div className="test-container">
+  <div className="test-container">
 
-        <h2>Success Stories</h2>
+    <h2>Success Stories</h2>
 
-        <div className="test-grid">
+    <div className="test-grid">
 
-          {/* CARD 1 */}
-          <div className="test-card">
-            <div className="stars">
-              <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
-            </div>
-
-            <p>
-              "The level of insight Vantage provides is unparalleled. They didn't
-              just run ads; they transformed our entire digital presence."
-            </p>
-
-            <div className="user">
-              <img src={user1} alt="user" />
-              <div>
-                <h4>Sarah Jenkins</h4>
-                <span>CEO, TechFlow</span>
-              </div>
-            </div>
-          </div>
-
-          {/* CARD 2 */}
-          <div className="test-card">
-            <div className="stars">
-              <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
-            </div>
-
-            <p>
-              "Vantage helped us scale from zero to $1M ARR through their
-              innovative content strategy and targeted LinkedIn ads."
-            </p>
-
-            <div className="user">
-             <img src={user2} alt="user" />
-              <div>
-                <h4>Marcus Chen</h4>
-                <span>Head of Growth, Elevate</span>
-              </div>
-            </div>
-          </div>
-
-          {/* CARD 3 */}
-          <div className="test-card">
-            <div className="stars">
-              <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
-            </div>
-
-            <p>
-              "Working with them feels like having an in-house team. They are
-              proactive, creative, and extremely results-oriented."
-            </p>
-
-            <div className="user">
-            <img src={user3} alt="user" />
-              <div>
-                <h4>Elena Rodriguez</h4>
-                <span>Founder, Aura Brands</span>
-              </div>
-            </div>
-          </div>
-
+      {/* CARD 1 */}
+      <div className="test-card">
+        <div className="stars">
+          <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
         </div>
 
+        <p>
+          "The level of insight Vantage provides is unparalleled. They didn't
+          just run ads; they transformed our entire digital presence."
+        </p>
+
+        <div className="user">
+          <div>
+            <h4>Mounika</h4>
+            <span>Guntur Karam</span>
+          </div>
+        </div>
       </div>
 
-    </section>
+      {/* CARD 2 */}
+      <div className="test-card">
+        <div className="stars">
+          <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+        </div>
+
+        <p>
+          "Vantage helped us scale from zero to $1M ARR through their
+          innovative content strategy and targeted LinkedIn ads."
+        </p>
+
+        <div className="user">
+          <div>
+            <h4>Rahul Duki</h4>
+            <span>Haraa Gold & Diamond</span>
+          </div>
+        </div>
+      </div>
+
+      {/* CARD 3 */}
+      <div className="test-card">
+        <div className="stars">
+          <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+        </div>
+
+        <p>
+          "Working with them feels like having an in-house team. They are
+          proactive, creative, and extremely results-oriented."
+        </p>
+
+        <div className="user">
+          <div>
+            <h4>Sarvesh.H</h4>
+            <span>Proprints</span>
+          </div>
+        </div>
+      </div> 
+
+    </div> 
+
+  </div>
+
+</section>
 
       {/* CTA */}
- <section className="cta">
+ <section className="home-cta">
 
-      <div className="cta-box">
+      <div className="home-cta-box">
 
         <h2>
           Ready to scale your <span>brand?</span>
@@ -433,7 +447,7 @@ export default function Home() {
           Schedule a free 30-minute strategy consultation with our experts and discover your untapped growth potential.
         </p>
 
-        <button>Schedule Consultation</button>
+        <button onClick={() => navigate("/contact")}>Schedule Consultation</button>
 
       </div>
 

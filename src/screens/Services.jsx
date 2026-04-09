@@ -5,11 +5,12 @@ import serviceshero from "../assets/services-hero.png";
 import impact1 from "../assets/impact1.png";
 import impact2 from "../assets/impact2.png";
 import impact3 from "../assets/impact3.png";
-import user1 from "../assets/user1.png";
-import user2 from "../assets/user2.png";
-import user3 from "../assets/user3.png";
+
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Services() {
+  const navigate = useNavigate();
   return (
     <div className="services-page">
 
@@ -40,9 +41,20 @@ export default function Services() {
         </p>
 
         <div className="service-hero-buttons">
-          <button className="primary">Start Your Project</button>
-          <button className="secondary">View Portfolio</button>
-        </div>
+          <button 
+    className="primary"
+    onClick={() => navigate("/contact")}
+  >
+    Start Your Project
+  </button>
+
+  <button 
+    className="secondary"
+    onClick={() => navigate("/impact")}
+  >
+    View Portfolio
+  </button>
+</div>
 
       </div>
 
@@ -69,56 +81,48 @@ export default function Services() {
           <FaBullhorn />
           <h3>Social Media</h3>
           <p>Engage your audience across all major platforms with precision.</p>
-          <a href="#">Learn More →</a>
         </div>
 
         <div className="service-card">
           <FaSearch />
           <h3>SEO</h3>
           <p>Rank higher and drive qualified organic traffic to your website.</p>
-          <a href="#">Learn More →</a>
         </div>
 
         <div className="service-card">
           <FaAd />
           <h3>PPC Ads</h3>
           <p>Maximize ROI with hyper-targeted paid advertising spend.</p>
-          <a href="#">Learn More →</a>
         </div>
 
         <div className="service-card">
           <FaPenNib />
           <h3>Content Strategy</h3>
           <p>Storytelling that converts visitors into lifelong brand advocates.</p>
-          <a href="#">Learn More →</a>
         </div>
 
         <div className="service-card">
           <FaUsers />
           <h3>Influencer</h3>
           <p>Partner with industry leaders to broaden your brand reach.</p>
-          <a href="#">Learn More →</a>
         </div>
 
         <div className="service-card">
           <FaCode />
           <h3>Web Dev</h3>
           <p>High-performance digital experiences built for conversions.</p>
-          <a href="#">Learn More →</a>
         </div>
 
         <div className="service-card">
           <FaEnvelope />
           <h3>Email Marketing</h3>
           <p>Personalized communication for every stage of the funnel.</p>
-          <a href="#">Learn More →</a>
         </div>
 
         <div className="service-card">
           <FaChartLine />
           <h3>Analytics</h3>
           <p>Deep insights and transparent reporting for smarter decisions.</p>
-          <a href="#">Learn More →</a>
         </div>
 
       </div>
@@ -188,9 +192,9 @@ export default function Services() {
           <p>Proven results from our recent partner collaborations.</p>
         </div>
 
-        <a href="#" className="view-link">
-          See All Our Work →
-        </a>
+      <Link to="/impact" className="view-link">
+  See All Our Work →
+</Link>
       </div>
 
       {/* CARDS */}
@@ -287,7 +291,7 @@ export default function Services() {
       <div className="why-right">
 
         <h2>
-          Why Choose <span>MadBuzz ?</span>
+          Why Choose <span>MadBzz ?</span>
         </h2>
 
         <p>
@@ -295,15 +299,7 @@ export default function Services() {
           seamlessly with yours to act as your dedicated growth engine.
         </p>
 
-        {/* USERS */}
-        <div className="users">
-     <img src={user1} alt="user" />
-     <img src={user2} alt="user" />
-     <img src={user3} alt="user" />
-          <span>Trusted by 500+ global brands</span>
-        </div>
-
-      </div>
+ </div>
 
     </section>
 
@@ -320,10 +316,12 @@ export default function Services() {
           Book a free strategy consultation today and get a customized
           growth roadmap for your business.
         </p>
-
-        <button className="cta-btn">
-          Start A Project Now
-        </button>
+<button 
+  className="cta-btn"
+  onClick={() => navigate("/contact")}
+>
+  Start A Project Now
+</button>
 
       </div>
 
