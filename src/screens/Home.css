@@ -938,3 +938,92 @@ background: #0F172A;   /* 🔥 main color */
     margin: auto;
   }
 }
+
+/* =========================
+   TABLET VIEW ONLY
+   (No desktop changes)
+========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* HERO */
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 40px;
+  }
+
+  .hero-left p {
+    margin: auto;
+  }
+
+  /* SERVICES */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* from 3 → 2 */
+  }
+
+  /* RESULTS */
+  .results-grid {
+    grid-template-columns: 1fr; /* from 2 → 1 */
+  }
+
+  .results-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  /* PROCESS */
+  .process .timeline {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .process .step {
+    width: 45%;
+  }
+
+  /* WHY */
+  .why-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-left {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-right {
+    width: 100%;
+  }
+
+  /* TESTIMONIALS */
+  .test-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* CTA */
+  .home-cta-box {
+    padding: 40px 25px;
+    text-align: center;
+  }
+
+  .home-cta-box h2 {
+    font-size: 30px;
+  }
+
+  .home-cta-box p {
+    margin: auto;
+  }
+
+}

@@ -406,3 +406,69 @@ background: #0F172A;   /* 🔥 main color */
     margin: auto;
   }
 }
+
+/* =========================
+   TABLET FIX (SAFE)
+========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* HERO */
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  .about-hero-left,
+  .about-hero-right {
+    width: 100%;
+  }
+
+  .about-hero-left h1 {
+    font-size: 36px;
+  }
+
+  .about-hero-right img {
+    width: 320px;
+    margin: auto;
+  }
+
+  /* STORY */
+  .story-cards {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .story-card {
+    width: 80%;
+  }
+
+  /* EXPERTS */
+  .experts-grid {
+    grid-template-columns: repeat(2, 1fr); /* 3 → 2 */
+    gap: 30px;
+  }
+
+  /* BRANDS */
+  .about-pill {
+    min-width: 120px;
+    padding: 0 20px;
+  }
+
+  /* CTA */
+  .about-cta-box {
+    padding: 40px 25px;
+    text-align: center;
+  }
+
+  .about-cta-box h2 {
+    font-size: 30px;
+  }
+
+  .about-cta-box p {
+    margin: auto;
+  }
+
+}

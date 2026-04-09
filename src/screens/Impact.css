@@ -306,3 +306,64 @@
     margin: auto;
   }
 }
+
+/* =========================
+   TABLET FIX (IMPACT PAGE)
+========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* HERO */
+  .work-hero {
+    padding: 60px 40px;
+    text-align: center;
+  }
+
+  .work-hero h1 {
+    font-size: 34px;
+  }
+
+  .work-hero p {
+    margin: auto;
+  }
+
+  /* FILTER */
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* GRID (IMPORTANT FIX) */
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);  /* from fixed 300px → responsive */
+    justify-content: center;
+    padding: 40px;
+  }
+
+  /* CARD IMAGE */
+  .work-card img {
+    height: 200px;
+  }
+
+  /* BRANDS */
+  .impact-pill {
+    min-width: 120px;
+    padding: 0 20px;
+  }
+
+  /* CTA */
+  .impact-cta-box {
+    padding: 40px 25px;
+    text-align: center;
+  }
+
+  .impact-cta-box h2 {
+    font-size: 30px;
+  }
+
+  .impact-cta-box p {
+    margin: auto;
+  }
+
+}

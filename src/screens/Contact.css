@@ -338,3 +338,51 @@ body {
     font-size: 20px;
   }
 }
+/* =========================
+   TABLET FIX (CONTACT)
+========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* HERO */
+  .contact-hero h1 {
+    font-size: 34px;
+  }
+
+  .contact-hero p {
+    font-size: 15px;
+  }
+
+  /* MAIN LAYOUT */
+  .contact-main {
+    flex-direction: column;   /* side → stack */
+    padding: 40px;
+    gap: 30px;
+  }
+
+  /* FORM */
+  .contact-form {
+    width: 100%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;  /* 2 → 1 */
+  }
+
+  /* RIGHT INFO */
+  .contact-info {
+    width: 100%;
+    flex-direction: row;   /* show cards side-by-side */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info-card {
+    width: 45%;
+  }
+
+  /* POPUP */
+  .popup-box {
+    width: 80%;
+  }
+
+}

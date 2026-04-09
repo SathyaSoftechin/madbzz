@@ -277,3 +277,71 @@ top: 10px;
     height: 130px;
   }
 }
+
+
+/* =========================
+   TABLET FIX (EXPERT PAGE)
+========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* CONTAINER */
+  .expert-container {
+    padding: 30px 40px;
+  }
+
+  /* LAYOUT → STACK (IMPORTANT) */
+  .expert-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+  }
+
+  /* LEFT IMAGE */
+  .expert-left {
+    margin-left: 0;
+  }
+
+  .yellow-shape {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .expert-left img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* TEXT */
+  .expert-right {
+    max-width: 100%;
+  }
+
+  .expert-right h1 {
+    font-size: 36px;
+  }
+
+  .expert-right p {
+    font-size: 15px;
+    margin: auto;
+  }
+
+  /* BRANDS GRID */
+  .expert-brands-grid {
+    grid-template-columns: repeat(2, 1fr); /* 4 → 2 */
+  }
+
+  /* CTA */
+  .expert-cta-box {
+    padding: 40px 25px;
+  }
+
+  .expert-cta-box h2 {
+    font-size: 30px;
+  }
+
+  .expert-cta-box p {
+    margin: auto;
+  }
+
+}
