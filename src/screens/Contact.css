@@ -151,6 +151,7 @@ body {
 }
 
 /* RIGHT INFO */
+/* RIGHT INFO */
 .contact-info {
   flex: 1;
   display: flex;
@@ -158,36 +159,39 @@ body {
   gap: 20px;
 }
 
+/* CLEAN CARD */
 .info-card {
   background: #0f172a;
   padding: 20px;
   border-radius: 12px;
+
   display: flex;
+  align-items: flex-start;
   gap: 15px;
-  align-items: center;
-}
-/* ✨ CARD HOVER EFFECT */
-.info-card {
+
   transition: all 0.3s ease;
 }
 
+/* HOVER */
 .info-card:hover {
   transform: translateY(-5px);
   border: 1px solid rgba(250, 204, 21, 0.3);
   box-shadow: 0 10px 30px rgba(250, 204, 21, 0.1);
 }
 
-/* 💫 ICON GLOW */
+/* ICON */
 .info-card svg {
-  font-size: 20px;
+  font-size: 22px;
+
   background: rgba(250, 204, 21, 0.1);
-  padding: 10px;
-  border-radius: 10px;
-}
-.info-card svg {
-  color: #FFCA00;
+  padding: 12px;
+  border-radius: 50%;
 }
 
+/* 🔥 MAIN FIX (VERY IMPORTANT) */
+.info-card svg path {
+  fill: #FFCA00 !important;
+}
 /* FULL SCREEN OVERLAY */
 .popup-overlay {
   position: fixed;

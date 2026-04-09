@@ -72,7 +72,7 @@ export default function Contact() {
         <div className="contact-info">
 
           <div className="info-card">
-            <FaMapMarkerAlt />
+            <FaMapMarkerAlt size={40} />
             <div>
               <h4>Our Office</h4>
               <p>Plot No. 446, Hitech City Road Divert, Ayyappa Society,<br /> VIP Hills, Jaihind Enclave, Madhapur,<br /> Hyderabad, Telangana 500081</p>
@@ -80,7 +80,7 @@ export default function Contact() {
           </div>
 
           <div className="info-card">
-            <FaEnvelope />
+            <FaEnvelope size={40} />
             <div>
               <h4>Email Us</h4>
               <p>madbzz.agency@gmail.com</p>
@@ -88,7 +88,7 @@ export default function Contact() {
           </div>
 
           <div className="info-card">
-            <FaPhone />
+            <FaPhone size={40}  />
             <div>
               <h4>Call Us</h4>
               <p>9117177979</p>
