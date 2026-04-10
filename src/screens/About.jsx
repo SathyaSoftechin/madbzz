@@ -1,10 +1,11 @@
 import "./About.css";
 
-import spotify from "../assets/aurovaoils.png";
-import google from "../assets/hlopg.png";
-import uber from "../assets/sathyasofttech.png";
-import microsoft from "../assets/srreality.png";
-import shopify from "../assets/yaritrip.png";
+import haraa from "../assets/haraa.png";
+import hlopg from "../assets/hlopg.png";
+import sathya from "../assets/sathyasoftech.png";
+import sr from "../assets/sr reality.png";
+import srmedia from "../assets/sr media.png";
+import guntur from "../assets/guntur karam.png";
 import abouthero from "../assets/abouthero.png";
 import vinay from "../assets/vinay.png";
 import keerthi from "../assets/keerthi.png";
@@ -123,25 +124,36 @@ export default function About() {
       </section>
 
       {/* BRANDS */}
-      <div className="brands-section">
-        <p className="brands-title">TRUSTED BY GLOBAL INNOVATORS</p>
-        <div className="brands-row">
-          <div className="about-pill">
-            <img src={spotify} />
-          </div>
-          <div className="about-pill">
-            <img src={google} />
-          </div>
-          <div className="about-pill">
-            <img src={uber} />
-          </div>
-          <div className="about-pill">
-            <img src={microsoft} />
-          </div>
-          <div className="about-pill">
-            <img src={shopify} />
-          </div>
-        </div>
+   <div className="about-brands-section">
+     <p className="about-brands-title">TRUSTED BY GLOBAL INNOVATORS</p>
+   
+     <div className="about-brands-row">
+   
+     <a href="https://haraagoldanddiamonds.com/" target="_blank" rel="noopener noreferrer">
+       <img src={haraa} alt="Haraa" className="brand-logo" />
+     </a>
+   
+     <a href="https://hlopg.com/" target="_blank" rel="noopener noreferrer">
+       <img src={hlopg} alt="Hlopg" className="brand-logo" />
+     </a>
+   
+     <a href="https://www.sathyasoftechin.com/" target="_blank" rel="noopener noreferrer">
+       <img src={sathya} alt="Sathya" className="brand-logo" />
+     </a>
+   
+     <a href="https://www.srrealtyproperties.com/" target="_blank" rel="noopener noreferrer">
+       <img src={sr} alt="SR" className="brand-logo" />
+     </a>
+   
+     <a href="https://srmediaind.com/" target="_blank" rel="noopener noreferrer">
+       <img src={srmedia} alt="srmedia" className="brand-logo" />
+     </a>
+   
+     <a href="https://www.gunturukaaram.com/" target="_blank" rel="noopener noreferrer">
+       <img src={guntur} alt="Guntur" className="brand-logo" />
+     </a>
+   
+   </div>
       </div>
 
       {/* CTA */}

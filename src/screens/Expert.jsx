@@ -35,23 +35,6 @@ Leveraging strong industry connections and market insights, Keerthi plays a key 
       </div>
 
 
-      {/* BRANDS */}
-      {/* <section className="expert-brands">
-
-        <div className="expert-brands-title">
-          BRANDS I DEAL WITH
-        </div>
-
-        <div className="expert-brands-grid">
-          {[1,2,3,4,5,6,7,8].map((item) => (
-            <div className="expert-brand-box" key={item}>
-              MADBZZ
-            </div>
-          ))}
-        </div>
-
-      </section> */}
-
       {/* CTA */}
       <section className="expert-cta">
 

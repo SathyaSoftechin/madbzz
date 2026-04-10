@@ -3,7 +3,7 @@ import { FaBullhorn, FaSearch, FaAd, FaPen, FaUsers, FaCode, FaEnvelope, FaChart
 import { FaShieldAlt, FaClipboardList, FaHandshake } from "react-icons/fa";
 import serviceshero from "../assets/services-hero.png";
 import impact1 from "../assets/result1.png";
-import impact2 from "../assets/impact2.png";
+import impact2 from "../assets/result2.png";
 import impact3 from "../assets/impact3.png";
 
 import { Link } from "react-router-dom";
@@ -201,9 +201,11 @@ export default function Services() {
       <div className="impact-grid">
 
         {/* CARD 1 */}
+        
         <div className="impact-card">
+           <a href="https://haraagoldanddiamonds.com/" target="_blank">
           <img src={impact1} alt="impact" />
-
+         </a>
           <div className="stats">
             <div className="stat-box">
               <h3>150%</h3>
@@ -218,9 +220,11 @@ export default function Services() {
         </div>
 
         {/* CARD 2 */}
+        
         <div className="impact-card">
+          <a href="https://www.sathyasoftechin.com/" target="_blank">
       <img src={impact2} alt="impact" />
-
+</a>
           <div className="stats">
             <div className="stat-box">
               <h3>85k</h3>
@@ -235,9 +239,11 @@ export default function Services() {
         </div>
 
         {/* CARD 3 */}
+        
         <div className="impact-card">
+           <a href="https://www.gunturukaaram.com/" target="_blank">
             <img src={impact3} alt="impact" />
-
+           </a>
           <div className="stats">
             <div className="stat-box">
               <h3>3M+</h3>

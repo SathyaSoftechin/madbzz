@@ -85,49 +85,52 @@
   color: #FFCA00;
 }
 /* BRANDS */
-.brands-section {
-  padding: 20px 0;
+/* ===== SECTION ===== */
+.impact-brands-section {
+  padding: 50px 20px;
   text-align: center;
 }
 
 /* TITLE */
-.brands-title {
+.impact-brands-title {
   color: #94a3b8;
-  font-size: 25px;
+  font-size: 18px;
   letter-spacing: 3px;
   font-weight: 600;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
-/* 🔥 MAIN FIX */
-.brands-row {
+/* ROW */
+.impact-brands-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 28px;   /* 🔥 increase spacing */
+  gap: 100px;
   flex-wrap: wrap;
 }
 
-/* 🔥 PILL FIX */
-.impact-pill {
-  background: #f1f5f9;
-  height: 70px;
-  padding: 0 35px;
-  border-radius: 999px;
+/* 🔥 SAME BOX FOR ALL LOGOS */
+.impact-brands-row a {
+  width: 100px;
+  height: 50px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 140px;
+
+  overflow: hidden;
 }
 
-.impact-pill img {
-  height: 40px;
+/* 🔥 FORCE SMALL LOGOS */
+.impact-brands-row img {
+   height: 400px;
   width: auto;
-  display: block;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 
-/* CTA */
+
 /* CTA */
 
 .impact-cta {
@@ -275,19 +278,21 @@
   }
 
   /* BRANDS */
-  .brands-title {
-    font-size: 16px;
+  .impact-brands-row {
+    gap: 20px;
   }
 
-  .impact-pill {
-    min-width: 90px;
-    padding: 0 15px;
+  .impact-brands-row a {
+    width: 90px;
+    height: 50px;
   }
 
-  .impact-pill img {
-    height: 16px;
+  .impact-brands-row img {
+    max-height: 40px;   /* 🔥 same perfect size */
+    width: auto;
   }
 
+}
   /* CTA */
  .impact-cta  {
     padding: 40px 20px;
@@ -305,7 +310,7 @@
   .impact-cta-box p {
     margin: auto;
   }
-}
+
 
 /* =========================
    TABLET FIX (IMPACT PAGE)
@@ -347,10 +352,10 @@
   }
 
   /* BRANDS */
-  .impact-pill {
-    min-width: 120px;
-    padding: 0 20px;
+ .impact-brands-row img {
+    height: 30px ;
   }
+
 
   /* CTA */
   .impact-cta-box {

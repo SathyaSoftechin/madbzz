@@ -10,11 +10,12 @@ import screen77 from "../assets/screen77.png";
 import screen88 from "../assets/screen88.png";
 import React, { useState, useEffect } from "react";
 
-import spotify from "../assets/aurovaoils.png";
-import google from "../assets/hlopg.png";
-import uber from "../assets/sathyasofttech.png";
-import microsoft from "../assets/srreality.png";
-import shopify from "../assets/yaritrip.png";
+import haraa from "../assets/haraa.png";
+import hlopg from "../assets/hlopg.png";
+import sathya from "../assets/sathyasoftech.png";
+import sr from "../assets/sr reality.png";
+import srmedia from "../assets/sr media.png";
+import guntur from "../assets/guntur karam.png";
 import result1 from "../assets/result1.png";
 import result2 from "../assets/result2.png";
 
@@ -105,17 +106,36 @@ export default function Home() {
       </section>
 
       {/* TRUSTED */}
-<div className="brands-section">
-  <p className="brands-title">TRUSTED BY GLOBAL INNOVATORS</p>
+<div className="home-brands-section">
+  <p className="home-brands-title">TRUSTED BY GLOBAL INNOVATORS</p>
 
-  <div className="brands-row">
- <div className="home-pill"><img src={spotify} /></div>
-    <div className="home-pill"><img src={google} /></div>
-    <div className="home-pill"><img src={uber} /></div>
-    <div className="home-pill"><img src={microsoft} /></div>
-    <div className="home-pill"><img src={shopify} /></div>
+  <div className="home-brands-row">
 
-  </div>
+  <a href="https://haraagoldanddiamonds.com/" target="_blank" rel="noopener noreferrer">
+    <img src={haraa} alt="Haraa" className="brand-logo" />
+  </a>
+
+  <a href=" https://hlopg.com/" target="_blank" rel="noopener noreferrer">
+    <img src={hlopg} alt="Hlopg" className="brand-logo" />
+  </a>
+
+  <a href="https://www.sathyasoftechin.com/" target="_blank" rel="noopener noreferrer">
+    <img src={sathya} alt="Sathya" className="brand-logo" />
+  </a>
+
+  <a href="https://www.srrealtyproperties.com/" target="_blank" rel="noopener noreferrer">
+    <img src={sr} alt="SR" className="brand-logo" />
+  </a>
+
+  <a href="https://srmediaind.com/" target="_blank" rel="noopener noreferrer">
+        <img src={srmedia} alt="srmedia" className="brand-logo" />
+      </a>
+
+  <a href="https://www.gunturukaaram.com/" target="_blank" rel="noopener noreferrer">
+    <img src={guntur} alt="Guntur" className="brand-logo" />
+  </a>
+
+</div>
 </div>
 
       {/* SERVICES */}
