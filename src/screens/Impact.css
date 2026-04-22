@@ -140,3 +140,142 @@ display: inline-block;
     max-width: 320px;
   }
 }
+
+
+
+/* =========================================
+   🔥 IMPACT PAGE RESPONSIVE (FINAL)
+========================================= */
+
+
+/* ===============================
+   BIG DESKTOP (≥1200px)
+=============================== */
+@media (min-width: 1200px) {
+
+  .work {
+    padding: 80px 20px;
+  }
+
+  .work-grid {
+    gap: 40px;
+  }
+
+  .work-card {
+    width: 320px;
+  }
+
+  .work-hero h1 {
+    font-size: 52px;
+  }
+
+}
+
+
+/* ===============================
+   SMALL LAPTOP (992px – 1199px)
+=============================== */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .work-grid {
+    gap: 25px;
+  }
+
+  .work-card {
+    width: 280px;
+  }
+
+  .work-hero h1 {
+    font-size: 42px;
+  }
+
+}
+
+
+/* ===============================
+   TABLET (768px – 991px)
+=============================== */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .work {
+    padding: 60px 20px;
+  }
+
+  .work-hero h1 {
+    font-size: 36px;
+  }
+
+  .work-hero p {
+    font-size: 15px;
+  }
+
+  /* GRID FIX */
+  .work-grid {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .work-card {
+    width: 45%;            /* 🔥 2 cards per row */
+    max-width: 320px;
+  }
+
+}
+
+
+/* ===============================
+   MOBILE (481px – 767px)
+=============================== */
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .work-hero h1 {
+    font-size: 30px;
+  }
+
+  .work-hero p {
+    font-size: 14px;
+  }
+
+  .work-grid {
+    gap: 20px;
+  }
+
+  .work-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+}
+
+
+/* ===============================
+   SMALL MOBILE (≤480px)
+=============================== */
+@media (max-width: 480px) {
+
+  .work {
+    padding: 50px 15px;
+  }
+
+  .work-hero h1 {
+    font-size: 26px;
+  }
+
+  .work-hero p {
+    font-size: 13px;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .work-grid {
+    gap: 15px;
+  }
+
+  .work-card img {
+    height: 200px;
+  }
+
+}

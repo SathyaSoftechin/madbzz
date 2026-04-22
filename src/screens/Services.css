@@ -704,3 +704,205 @@
     text-align: center;
   }
 }
+
+
+/* =========================================
+   🔥 SERVICES PAGE RESPONSIVE (FINAL)
+========================================= */
+
+
+/* ===============================
+   BIG DESKTOP (≥1200px)
+=============================== */
+@media (min-width: 1200px) {
+
+  .service-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .service-hero h1 {
+    font-size: 52px;
+  }
+
+  .impact-grid {
+    gap: 30px;
+  }
+
+}
+
+
+/* ===============================
+   SMALL LAPTOP (992px – 1199px)
+=============================== */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .service-hero h1 {
+    font-size: 42px;
+  }
+
+  .impact-card {
+    width: 300px;
+  }
+
+  .service-why-section {
+    gap: 30px;
+  }
+
+}
+
+
+/* ===============================
+   TABLET (768px – 991px)
+=============================== */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .service-hero h1 {
+    font-size: 34px;
+  }
+
+  .service-hero p {
+    font-size: 15px;
+  }
+
+  /* GRID FIX */
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* TIMELINE FIX */
+  .timeline {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .timeline-item {
+    width: 45%;
+  }
+
+  /* IMPACT FIX */
+  .impact-header {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;   /* 🔥 important fix */
+    gap: 10px;
+  }
+
+  .impact-grid {
+    justify-content: center;
+  }
+
+  .impact-card {
+    width: 45%;
+  }
+
+  /* WHY FIX */
+  .service-why-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-why-left {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-why-right {
+    max-width: 500px;
+    margin: auto;
+  }
+
+}
+
+
+/* ===============================
+   MOBILE (481px – 767px)
+=============================== */
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .service-hero h1 {
+    font-size: 28px;
+  }
+
+  .service-hero-buttons {
+    flex-direction: column;
+  }
+
+  /* GRID */
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* TIMELINE */
+  .timeline {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+  }
+
+  /* IMPACT */
+  .impact-header {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .impact-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* WHY */
+  .service-why-left {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* ===============================
+   SMALL MOBILE (≤480px)
+=============================== */
+@media (max-width: 480px) {
+
+  .service-hero h1 {
+    font-size: 24px;
+  }
+
+  .service-hero p {
+    font-size: 13px;
+  }
+
+  .service-badge {
+    font-size: 11px;
+  }
+
+  .primary,
+  .secondary {
+    width: 100%;
+  }
+
+  /* CARDS */
+  .service-card {
+    padding: 20px;
+  }
+
+  /* IMPACT */
+  .impact-card img {
+    height: 160px;
+  }
+
+  /* TEXT */
+  h2 {
+    font-size: 24px !important;
+  }
+
+}

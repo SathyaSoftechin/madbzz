@@ -414,39 +414,189 @@
 .newsletter-btn:hover {
   background: #eab308;
 }
-.glass-card {
-  position: relative; /* ✅ REQUIRED for ::before */
 
-  width: 320px;
-  padding: 40px;
-  border-radius: 24px;
 
-  background: rgba(255, 255, 255, 0.08); /* slightly more visible */
+/* =========================================
+   🔥 ABOUT PAGE RESPONSIVE (FINAL)
+========================================= */
 
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
 
-  border: 1px solid rgba(255, 255, 255, 0.15);
+/* ===============================
+   BIG DESKTOP (≥1200px)
+=============================== */
+@media (min-width: 1200px) {
 
-  box-shadow:
-    0 8px 32px rgba(0,0,0,0.5),
-    inset 0 1px 0 rgba(255,255,255,0.2);
+  .about-container {
+    max-width: 900px;
+  }
 
-  color: white;
+  .story-boxes {
+    gap: 40px;
+  }
+
+  .stats-container {
+    gap: 200px;
+  }
+
 }
 
-.glass-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
 
-  background: linear-gradient(
-    120deg,
-    rgba(255,255,255,0.4),
-    transparent 50%
-  );
+/* ===============================
+   SMALL LAPTOP (992px – 1199px)
+=============================== */
+@media (min-width: 992px) and (max-width: 1199px) {
 
-  opacity: 0.25;
-  pointer-events: none;
+  .about-left h1 {
+    font-size: 42px;
+  }
+
+  .story-boxes {
+    gap: 30px;
+  }
+
+  .stats-container {
+    gap: 120px;
+  }
+
+  .team-card {
+    width: 260px;
+    height: 360px;
+  }
+
+}
+
+
+/* ===============================
+   TABLET (768px – 991px)
+=============================== */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .about-left h1 {
+    font-size: 34px;
+  }
+
+  .desc {
+    font-size: 15px;
+  }
+
+  /* STORY */
+  .story-boxes {
+    gap: 20px;
+  }
+
+  .story-box {
+    width: 220px;
+  }
+
+  /* STATS (IMPORTANT FIX) */
+  .stats-container {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  /* TEAM */
+  .team-card {
+    width: 240px;
+    height: 320px;
+  }
+
+  /* NEWSLETTER */
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+}
+
+
+/* ===============================
+   MOBILE (481px – 767px)
+=============================== */
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .about-left h1 {
+    font-size: 28px;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* STORY */
+  .story-box {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* STATS */
+  .stats-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* TEAM */
+  .team-card {
+    width: 90%;
+    max-width: 280px;
+    height: 320px;
+  }
+
+  /* NEWSLETTER */
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+  }
+
+}
+
+
+/* ===============================
+   SMALL MOBILE (≤480px)
+=============================== */
+@media (max-width: 480px) {
+
+  .about-left h1 {
+    font-size: 24px;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* STORY */
+  .story-box {
+    width: 100%;
+  }
+
+  /* TEAM */
+  .team-card {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* TEXT FIX */
+  h2 {
+    font-size: 24px !important;
+  }
+
 }

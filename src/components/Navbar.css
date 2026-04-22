@@ -1,6 +1,7 @@
 .nav-wrapper {
   position: relative;   /* ✅ change from sticky */
   top: 0;
+  z-index: 9999;
 }
 
 /* INDICATOR */
@@ -17,7 +18,7 @@
 }
 .navbar {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1000px;
   padding-left: 20px;
   display: flex;
   align-items: center;
@@ -134,12 +135,95 @@
   display: none;
 }
 
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
+
+
+/* ===============================
+   🔥 BIG DESKTOP (≥1200px)
+=============================== */
+@media (min-width: 1200px) {
+
+  .navbar {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .nav-links {
+    gap: 70px;
+  }
+
+  .logo img {
+    height: 65px;
+  }
+}
+
+
+/* ===============================
+   🔥 SMALL LAPTOP (992px – 1199px)
+=============================== */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .navbar {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 40px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+    padding: 0 12px;
+  }
+
+  .logo img {
+    height: 55px;
+  }
+
+  .contact-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}
+
+
+/* ===============================
+   🔥 TABLET (768px – 991px)
+   (COVERS 769×1024 PERFECTLY)
+=============================== */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .nav-links {
+    gap: 20px;              /* 🔥 reduce spacing */
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .contact-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+/* ===============================
+   🔥 MOBILE (481px – 767px)
+=============================== */
+@media (min-width: 481px) and (max-width: 767px) {
 
   .navbar {
     padding: 12px 15px;
-    border-radius: 30px;
+    position: relative;
   }
 
   .logo img {
@@ -150,16 +234,21 @@
     display: block;
     position: absolute;
     right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 26px;
     color: #ffcc00;
-    cursor: pointer;
+    z-index: 10000;
   }
 
   .contact-btn {
     position: absolute;
     right: 60px;
-    padding: 8px 14px;
-    font-size: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 6px 12px;
+    font-size: 12px;
+    z-index: 10000;
   }
 
   .nav-links {
@@ -167,29 +256,131 @@
     top: 70px;
     right: 10px;
 
-    background: #0f172a;
-    border-radius: 12px;
+    width: 210px;
     padding: 15px;
 
     flex-direction: column;
-    width: 200px;
-    gap: 10px;
+    gap: 12px;
 
     display: none;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    z-index: 9999;
   }
 
   .nav-links.active {
     display: flex;
   }
+}
 
-  .nav-indicator {
-    display: none; /* disable animation on mobile */
+
+/* ===============================
+   🔥 SMALL MOBILE (≤480px)
+=============================== */
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 10px 12px;
+    position: relative;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .menu-toggle {
+    display: block;
+    right: 12px;
+    font-size: 24px;
+  }
+
+  .contact-btn {
+    right: 50px;
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .nav-links {
+    width: 180px;
+    right: 8px;
   }
 
   .nav-links a {
-    width: 100%;
-    justify-content: flex-start;
-    padding: 10px;
+    font-size: 13px;
   }
+}
+/* ===============================
+   🔥 TABLET NAVBAR ALIGN FIX
+=============================== */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* LOGO */
+  .logo {
+    flex: 0 0 auto;
+  }
+
+  /* NAV LINKS CENTER FIX */
+  .nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;   /* center properly */
+    gap: 18px;
+  }
+
+  /* CONTACT BUTTON RIGHT FIX */
+  .contact-btn {
+    flex: 0 0 auto;
+  }
+
+}
+
+
+/* ===============================
+   🔥 TABLET PERFECT FIX (769×1024)
+=============================== */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 25px;
+  }
+
+  /* LOGO */
+  .logo {
+    flex: 0 0 auto;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  /* NAV LINKS (REAL CENTER FIX) */
+  .nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;          /* 🔥 perfect spacing */
+    margin: 0 10px;     /* balance both sides */
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+
+  /* CONTACT BUTTON */
+  .contact-btn {
+    flex: 0 0 auto;
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+
 }
