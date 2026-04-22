@@ -516,9 +516,9 @@ import img7 from "../assets/screen77.png";
 import haraa from "../assets/haraa.png";
 import hlopg from "../assets/hlopg.png";
 import sathya from "../assets/sathyasoftech.png";
-import sr from "../assets/sr reality.png";
-import srmedia from "../assets/sr media.png";
-import guntur from "../assets/guntur karam.png";
+import sr from "../assets/srreality.png";
+import srmedia from "../assets/srmedia.png";
+import guntur from "../assets/gunturkaram.png";
 import result1 from "../assets/result1.png";
 import result2 from "../assets/result2.png";
 

@@ -347,7 +347,7 @@ import { FaShieldAlt, FaClipboardList, FaHandshake } from "react-icons/fa";
 
 
 import impact1 from "../assets/result1.png";
-import impact2 from "../assets/sr media.jpg";
+import impact2 from "../assets/srmedia.jpg";
 import impact3 from "../assets/impact3.png";
 export default function Services() {
   const navigate = useNavigate();

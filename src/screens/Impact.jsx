@@ -150,9 +150,9 @@
 
 
 import "./Impact.css";
-import work1 from "../assets/Adsinap.jpg";
+import work1 from "../assets/adsinap.jpg";
 import work2 from "../assets/yaritrip.jpg";
-import work3 from "../assets/sr reality.jpg";
+import work3 from "../assets/srreality.jpg";
 
 export default function Work() {
 
