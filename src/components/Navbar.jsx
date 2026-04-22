@@ -74,7 +74,7 @@ import "./Navbar.css";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
 
-import { useState, useLayoutEffect, useRef } from "react";
+import { useState, useLayoutEffect, useEffect, useRef } from "react";
 
 export default function Navbar() {
   const location = useLocation();
@@ -85,79 +85,64 @@ export default function Navbar() {
   const indicatorRef = useRef(null);
 
   // 🔥 Move active indicator
-useLayoutEffect(() => {
-  const activeLink = navRef.current?.querySelector(".active");
+  // 🔥 MAIN INDICATOR POSITION (FIXED)
+  useLayoutEffect(() => {
+    const updateIndicator = () => {
+      const activeLink = navRef.current?.querySelector(".active");
 
-  if (activeLink && indicatorRef.current && navRef.current) {
-    const rect = activeLink.getBoundingClientRect();
-    const parentRect = navRef.current.getBoundingClientRect();
+      if (!activeLink || !indicatorRef.current || !navRef.current) return;
 
-    indicatorRef.current.style.width = `${rect.width}px`;
-    indicatorRef.current.style.left = `${rect.left - parentRect.left}px`;
-  }
-}, [location.pathname]);
-
-
-useLayoutEffect(() => {
-  const updateIndicator = () => {
-    const activeLink = navRef.current?.querySelector(".active");
-
-    if (activeLink && indicatorRef.current && navRef.current) {
       const rect = activeLink.getBoundingClientRect();
       const parentRect = navRef.current.getBoundingClientRect();
 
       indicatorRef.current.style.width = `${rect.width}px`;
       indicatorRef.current.style.left = `${rect.left - parentRect.left}px`;
-    }
-  };
+    };
 
-  updateIndicator();
-
-  window.addEventListener("resize", updateIndicator);
-  return () => window.removeEventListener("resize", updateIndicator);
-
-}, [location.pathname]);
-
-useLayoutEffect(() => {
-  const links = navRef.current?.querySelectorAll("a");
-
-  const moveIndicator = (el) => {
-    if (!el || !indicatorRef.current || !navRef.current) return;
-
-    const rect = el.getBoundingClientRect();
-    const parentRect = navRef.current.getBoundingClientRect();
-
-    indicatorRef.current.style.width = `${rect.width}px`;
-    indicatorRef.current.style.left = `${rect.left - parentRect.left}px`;
-  };
-
-  const handleMouseEnter = (e) => moveIndicator(e.target);
-
-  const handleMouseLeave = () => {
-    const active = navRef.current.querySelector(".active");
-    if (active) moveIndicator(active);
-  };
-
-  // ✅ add events
-  links.forEach((link) => {
-    link.addEventListener("mouseenter", handleMouseEnter);
-  });
-
-  navRef.current.addEventListener("mouseleave", handleMouseLeave);
-
-  // ✅ initial position
-  const active = navRef.current.querySelector(".active");
-  if (active) moveIndicator(active);
-
-  // ✅ cleanup (VERY IMPORTANT)
-  return () => {
-    links.forEach((link) => {
-      link.removeEventListener("mouseenter", handleMouseEnter);
+    // 🔥 FIX refresh bug (important)
+    requestAnimationFrame(() => {
+      setTimeout(updateIndicator, 80);
     });
-    navRef.current?.removeEventListener("mouseleave", handleMouseLeave);
-  };
 
-}, [location.pathname]);
+    window.addEventListener("resize", updateIndicator);
+
+    return () => window.removeEventListener("resize", updateIndicator);
+  }, [location.pathname]);
+
+  // 🔥 HOVER EFFECT (clean)
+  useEffect(() => {
+    const links = navRef.current?.querySelectorAll("a");
+
+    const moveIndicator = (el) => {
+      if (!el || !indicatorRef.current || !navRef.current) return;
+
+      const rect = el.getBoundingClientRect();
+      const parentRect = navRef.current.getBoundingClientRect();
+
+      indicatorRef.current.style.width = `${rect.width}px`;
+      indicatorRef.current.style.left = `${rect.left - parentRect.left}px`;
+    };
+
+    const handleMouseEnter = (e) => moveIndicator(e.target);
+
+    const handleMouseLeave = () => {
+      const active = navRef.current.querySelector(".active");
+      if (active) moveIndicator(active);
+    };
+
+    links.forEach((link) =>
+      link.addEventListener("mouseenter", handleMouseEnter)
+    );
+
+    navRef.current?.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      links.forEach((link) =>
+        link.removeEventListener("mouseenter", handleMouseEnter)
+      );
+      navRef.current?.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, [location.pathname]);
 
   return (
     <div className="nav-wrapper">

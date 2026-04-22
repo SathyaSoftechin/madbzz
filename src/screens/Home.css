@@ -1207,3 +1207,27 @@ color: black;
   }
 
 }
+
+/* =========================================
+   🔥 GLOBAL HEIGHT FIX (ALL PAGES)
+========================================= */
+
+@media (min-width: 1600px) and (max-height: 1050px) {
+
+  section {
+    padding: 30px 20px !important;   /* reduce all sections */
+  }
+
+  h1 {
+    font-size: 85% !important;
+  }
+
+  h2 {
+    font-size: 90% !important;
+  }
+
+  p {
+    font-size: 95% !important;
+  }
+
+}

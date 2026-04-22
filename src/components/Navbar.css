@@ -16,6 +16,7 @@
 
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .navbar {
   width: 100%;
   max-width: 1000px;
@@ -133,6 +134,7 @@
 /* MENU TOGGLE */
 .menu-toggle {
   display: none;
+   background: white;
 }
 
 
@@ -287,7 +289,7 @@
     flex-direction: column;
     gap: 12px;
 
-    background: #0f172a;
+    background: #ffcc00;
     border-radius: 12px;
 
     display: none;            /* 🔥 hidden by default */
@@ -330,6 +332,7 @@
   .menu-toggle {
     font-size: 24px;
     right: 12px;
+    background: white;
   }
 
   .contact-btn {
