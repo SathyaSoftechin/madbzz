@@ -532,17 +532,20 @@
     gap: 10px;
   }
 
-  /* STORY */
-  .story-box {
-    width: 100%;
-    max-width: 280px;
-  }
+ /* 🔥 STATS FIX (MOBILE) */
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* 🔥 center everything */
+  justify-content: center;
+  gap: 20px;
+}
 
-  /* STATS */
-  .stats-container {
-    flex-direction: column;
-    gap: 20px;
-  }
+.stat-box {
+  width: 100%;
+  max-width: 250px;      /* 🔥 control width */
+  text-align: center;    /* 🔥 center text */
+}
 
   /* TEAM */
   .team-card {
@@ -584,8 +587,13 @@
   }
 
   /* STORY */
-  .story-box {
-    width: 100%;
+.stats-container {
+    align-items: center;
+    gap: 15px;
+  }
+
+  .stat-box {
+    max-width: 220px;
   }
 
   /* TEAM */
