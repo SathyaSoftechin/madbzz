@@ -17,7 +17,7 @@ export default function Expert() {
 
         {/* LEFT IMAGE */}
         <div className="expert-left">
-          <div className="yellow-shape"></div>
+          
           <img src={keerthi} alt="profile" />
         </div>
 

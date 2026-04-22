@@ -1,61 +1,66 @@
-
-/* HERO */
-.work-hero {
-  padding: 80px 100px;
+/* =========================
+   PAGE
+========================= */
+.work {
+  color: white;
+  padding: 60px 20px;
 }
 
+/* =========================
+   HERO
+========================= */
+.work-hero {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* BADGE / TAG */
 .tag {
-  background: rgba(250,204,21,0.1);
-  color: #FFCA00;
-  padding: 6px 12px;
+display: inline-block;
+
+  background: #1e293b;   /* same dark bg */
+  color: #FFCA00;        /* yellow text */
+
+  padding: 5px 12px;
   border-radius: 20px;
+
   font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .work-hero h1 {
-  font-size: 40px;
-  margin: 15px 0;
-}
-
-.work-hero p {
-  color: #94a3b8;
-  max-width: 600px;
-}
-
-/* FILTER */
-.filters {
-  margin-top: 20px;
-}
-
-.filters button {
-  background: #0f172a;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 20px;
-  margin-right: 10px;
-  color: white;
-  cursor: pointer;
-}
-
-.filters .active {
-  background: #FFCA00;
+  font-size: 48px;
+  margin: 10px 0;
   color: black;
 }
 
-/* GRID */
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 300px); /* 🔥 fixed card size */
-  justify-content: flex-start;              /* 🔥 LEFT ALIGN */
-  gap: 30px;
-  padding: 40px 100px;
+.work-hero p {
+  color: grey;
+  margin-bottom: 30px;
 }
 
-/* CARD */
+
+
+/* =========================
+   GRID
+========================= */
+.work-grid {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
 .work-card {
-  background: #1E293B;
+  width: 300px;
   border-radius: 16px;
   overflow: hidden;
+  background: #0f172a;
+
+  opacity: 0;
 }
 
 .work-card img {
@@ -65,310 +70,73 @@
 }
 
 .card-content {
-  padding: 20px;
+  padding: 15px;
 }
 
 .card-content span {
-  color: #FFCA00;
+  color: #FFC107;
   font-size: 12px;
 }
 
-.card-content h3 {
-  margin: 10px 0;
+/* =========================
+   ANIMATIONS
+========================= */
+.fade-top {
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: fadeTop 0.8s ease forwards;
 }
 
-.card-content p {
-  color: #94a3b8;
+.slide-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  animation: slideLeft 0.8s ease forwards;
 }
 
-.card-content b {
-  color: #FFCA00;
-}
-/* BRANDS */
-/* ===== SECTION ===== */
-.impact-brands-section {
-  padding: 50px 20px;
-  text-align: center;
+.slide-right {
+  opacity: 0;
+  transform: translateX(60px);
+  animation: slideRight 0.8s ease forwards;
 }
 
-/* TITLE */
-.impact-brands-title {
-  color: #94a3b8;
-  font-size: 18px;
-  letter-spacing: 3px;
-  font-weight: 600;
-  margin-bottom: 40px;
+.slide-bottom {
+  opacity: 0;
+  transform: translateY(80px);
+  animation: slideBottom 0.8s ease forwards;
 }
 
-/* ROW */
-.impact-brands-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  flex-wrap: wrap;
+/* KEYFRAMES */
+@keyframes fadeTop {
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* 🔥 SAME BOX FOR ALL LOGOS */
-.impact-brands-row a {
-  width: 100px;
-  height: 50px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  overflow: hidden;
+@keyframes slideLeft {
+  to { opacity: 1; transform: translateX(0); }
 }
 
-/* 🔥 FORCE SMALL LOGOS */
-.impact-brands-row img {
-   height: 400px;
-  width: auto;
-  max-width: 100%;
-  object-fit: contain;
+@keyframes slideRight {
+  to { opacity: 1; transform: translateX(0); }
 }
 
-
-
-/* CTA */
-
-.impact-cta {
-  padding: 80px 20px;
-
-  display: flex;
-  justify-content: center;   /* center box horizontally */
-  align-items: center;       /* center vertically */
-  text-align: center;
-}
-/* BOX */
-.impact-cta-box {
-  width: 100%;
-
-  margin: auto;
-  padding: 60px;
-  border-radius: 24px;
-
-  background: #0F172A;
-  border: 1px solid #334155;
-
-  color: white;
-  text-align: center;   /* center everything inside */
-}
-/* TITLE */
-.impact-cta-box h2 {
-  font-size: 36px;
-  font-weight: 700;
+@keyframes slideBottom {
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.impact-cta-box span {
-  color: #FFCA00;
-}
-
-/* TEXT */
-.impact-cta-box p {
-  margin: 15px auto 0;   /* 🔥 centers the text block */
-  color: #94a3b8;
-  max-width: 500px;
-  line-height: 1.6;
-  font-size: 14px;
-}
-
-/* BUTTON */
-.impact-cta-box button {
-  margin-top: 25px;
-
-  background: #FFCA00;
-  color: black;
-
-  border: none;
-  padding: 14px 28px;
-  border-radius: 10px;
-
-  font-weight: 600;
-  cursor: pointer;
-
-  transition: 0.3s;
-}
-
-/* HOVER */
-.impact-cta-box button:hover {
-  background: #eab308;
-}
-
-
+/* DELAYS */
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 1s; }
 
 /* =========================
-   IMPACT PAGE RESPONSIVE
+   RESPONSIVE
 ========================= */
-
-/* TABLET */
-@media (max-width: 1024px) {
-
-  .work-hero {
-    padding: 60px 40px;
-  }
-
-  .work-grid {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 40px 40px;
-  }
-
+@media (max-width: 768px) {
   .work-hero h1 {
     font-size: 32px;
   }
-}
 
-
-/* =========================
-   MOBILE
-========================= */
-@media (max-width: 768px) {
-
-  /* HERO */
-  .work-hero {
-    padding: 40px 20px;
-    text-align: center;
+  .work-card {
+    width: 100%;
+    max-width: 320px;
   }
-
-  .work-hero h1 {
-    font-size: 26px;
-  }
-
-  .work-hero p {
-    font-size: 14px;
-    margin: auto;
-  }
-
-  /* FILTER BUTTONS */
-  .filters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .filters button {
-    margin: 0;
-    font-size: 13px;
-    padding: 8px 12px;
-  }
-
-  /* GRID */
-  .work-grid {
-    grid-template-columns: 1fr;
-    padding: 30px 20px;
-  }
-
-  /* CARD */
-  .work-card img {
-    height: 180px;
-  }
-
-  .card-content {
-    padding: 15px;
-  }
-
-  .card-content h3 {
-    font-size: 16px;
-  }
-
-  .card-content p {
-    font-size: 13px;
-  }
-
-  /* BRANDS */
-  .impact-brands-row {
-    gap: 20px;
-  }
-
-  .impact-brands-row a {
-    width: 90px;
-    height: 50px;
-  }
-
-  .impact-brands-row img {
-    max-height: 40px;   /* 🔥 same perfect size */
-    width: auto;
-  }
-
-}
-  /* CTA */
- .impact-cta  {
-    padding: 40px 20px;
-  }
-
-  .impact-cta-box {
-    padding: 30px 20px;
-    text-align: center;
-  }
-
-  .impact-cta-box h2 {
-    font-size: 24px;
-  }
-
-  .impact-cta-box p {
-    margin: auto;
-  }
-
-
-/* =========================
-   TABLET FIX (IMPACT PAGE)
-========================= */
-@media (min-width: 769px) and (max-width: 1024px) {
-
-  /* HERO */
-  .work-hero {
-    padding: 60px 40px;
-    text-align: center;
-  }
-
-  .work-hero h1 {
-    font-size: 34px;
-  }
-
-  .work-hero p {
-    margin: auto;
-  }
-
-  /* FILTER */
-  .filters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  /* GRID (IMPORTANT FIX) */
-  .work-grid {
-    grid-template-columns: repeat(2, 1fr);  /* from fixed 300px → responsive */
-    justify-content: center;
-    padding: 40px;
-  }
-
-  /* CARD IMAGE */
-  .work-card img {
-    height: 200px;
-  }
-
-  /* BRANDS */
- .impact-brands-row img {
-    height: 30px ;
-  }
-
-
-  /* CTA */
-  .impact-cta-box {
-    padding: 40px 25px;
-    text-align: center;
-  }
-
-  .impact-cta-box h2 {
-    font-size: 30px;
-  }
-
-  .impact-cta-box p {
-    margin: auto;
-  }
-
 }

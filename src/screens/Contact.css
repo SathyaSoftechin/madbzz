@@ -1,8 +1,4 @@
-body {
-  background: #020617;
-  font-family: "Poppins";
-  color: white;
-}
+
 
 /* HERO */
 .contact-hero {
@@ -60,14 +56,19 @@ body {
 /* FORM */
 .contact-form {
   flex: 2;
-  background: #0f172a;
+  background: #ffffff;   /* white */
   padding: 30px;
   border-radius: 15px;
+
+  border: 1px solid #e5e7eb;   /* light border */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
+
 /* 🔥 PREMIUM GLASS EFFECT */
 .contact-form,
 .info-card {
-  background: linear-gradient(145deg, #0f172a, #020617);
+   background: linear-gradient(145deg, #ffffff, white);
+
   border: 1px solid rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -76,10 +77,11 @@ body {
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-  background: #020617;
+  background: #1e293b;
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: all 0.3s ease;
 }
+
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
@@ -97,11 +99,12 @@ body {
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-  background: #1e293b;
-  border: none;
+  background: #ffffff;   /* white inside */
+  border: 1px solid #d1d5db;
   padding: 12px;
   border-radius: 8px;
-  color: white;
+  color: #000000;   /* black text */
+  transition: all 0.3s ease;
 }
 
 .contact-form textarea {
@@ -161,7 +164,7 @@ body {
 
 /* CLEAN CARD */
 .info-card {
-  background: #0f172a;
+  background: white;
   padding: 20px;
   border-radius: 12px;
 

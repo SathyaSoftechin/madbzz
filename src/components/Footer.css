@@ -1,7 +1,7 @@
 .footer {
-  background: #020617;
+  background: #eab308;
   padding: 60px 80px 30px;
-  color: #94a3b8;
+
 }
 
 /* CONTAINER */
@@ -9,7 +9,7 @@
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  grid-template-columns: 3fr 1fr 1fr 1.5fr;
   gap: 50px;
 }
 
@@ -17,7 +17,7 @@
 .logo-box {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .logo-box img {
@@ -25,7 +25,7 @@
 }
 
 .logo-box h3 {
-  color: white;
+  color: #FFFFFF;
 }
 
 .logo-box span {
@@ -75,18 +75,10 @@
   color: #0a66c2; /* LinkedIn */
 }
 
-/* HOVER */
-.socials a:hover {
-  transform: translateY(-6px) scale(1.1);
-  background: #FFCA00;
-}
 
-.socials a:hover svg {
-  color: black !important;
-}
 /* COLUMNS */
 .footer-col h4 {
-  color: white;
+  color: #FFFFFF;
   margin-bottom: 15px;
 }
 .footer-col {
@@ -105,13 +97,13 @@
   display: block;              /* 🔥 makes vertical */
    margin: 0;
   font-size: 14px;
-  color: #94a3b8;
+  color:black;
   text-decoration: none;
   transition: 0.3s;
 }
-.footer-col a:hover {
-  color: #FFCA00;
-}
+/* .footer-col a:hover {
+  color: #a8a7a7;
+} */
 
 /* BOTTOM */
 .footer-bottom {
