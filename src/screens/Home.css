@@ -1186,3 +1186,24 @@ color: black;
   }
 
 }
+/* =========================================
+   🔥 FIX EXTRA SCROLL (1920×1024)
+========================================= */
+
+@media (min-width: 1600px) and (max-height: 1050px) {
+
+  .hero {
+    min-height: 100vh;   /* fit screen */
+    padding: 10px 20px;  /* reduce spacing */
+    gap: 20px;           /* reduce vertical gap */
+  }
+
+  .carousel {
+    height: 360px;       /* reduce from 420 */
+  }
+
+  .main-heading {
+    font-size: 52px;     /* slightly smaller */
+  }
+
+}

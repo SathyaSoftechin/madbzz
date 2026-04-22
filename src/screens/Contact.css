@@ -550,3 +550,56 @@
   }
 
 }
+/* =========================================
+   🔥 CONTACT FIX (1920×1024 NO SCROLL)
+========================================= */
+
+@media (min-width: 1600px) and (max-height: 1050px) {
+
+  /* HERO */
+  .contact-hero {
+    padding: 15px 20px;
+  }
+
+  .contact-hero h1 {
+    font-size: 36px;
+  }
+
+  .contact-hero p {
+    margin: 5px auto 15px;
+  }
+
+  /* MAIN LAYOUT (BIG FIX) */
+  .contact-main {
+    padding: 20px 60px;   /* from 100 → FIXED */
+    gap: 25px;
+  }
+
+  /* FORM */
+  .contact-form {
+    padding: 20px;
+  }
+
+  .form-grid {
+    gap: 10px;
+  }
+
+  .contact-form textarea {
+    height: 90px;   /* reduce height */
+  }
+
+  /* INFO CARDS */
+  .contact-info {
+    gap: 15px;
+  }
+
+  .info-card {
+    padding: 15px;
+  }
+
+  /* BUTTON */
+  .send-btn {
+    padding: 12px;
+  }
+
+}

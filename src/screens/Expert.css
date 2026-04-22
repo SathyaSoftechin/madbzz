@@ -361,3 +361,66 @@ MAIN CONTAINER
 }
 
 
+/* =========================================
+   🔥 EXPERT PAGE FIX (1920×1024 NO SCROLL)
+========================================= */
+
+@media (min-width: 1600px) and (max-height: 1050px) {
+
+  /* CONTAINER */
+  .expert-container {
+    padding: 20px 60px;
+  }
+
+  /* 🔥 MAIN LAYOUT FIX */
+  .expert-content {
+    gap: 80px;              /* from 180 → FIXED */
+  }
+
+  .expert-left {
+    margin-left: 0;         /* 🔥 remove shift */
+  }
+
+  /* IMAGE */
+  .expert-left {
+    width: 260px;
+    height: 260px;
+  }
+
+  /* TEXT */
+  .expert-right h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+
+  .expert-right p {
+    font-size: 16px;
+  }
+
+  /* 🔥 BRANDS FIX */
+  .expert-brands {
+    margin-top: 40px;       /* from 80 → FIXED */
+  }
+
+  .expert-brands-grid {
+    gap: 15px;
+  }
+
+  .expert-brand-box {
+    padding: 15px;
+  }
+
+  /* 🔥 CTA FIX (MAIN PROBLEM) */
+  .expert-cta {
+    margin-top: 40px;
+  }
+
+  .expert-cta-box {
+    padding: 30px;          /* from 60 → FIXED */
+  }
+
+  .expert-cta-box h2 {
+    font-size: 28px;
+  }
+
+}

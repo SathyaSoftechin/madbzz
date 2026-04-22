@@ -225,3 +225,54 @@
   }
 
 }
+
+/* =========================================
+   🔥 FOOTER FIX (1920×1024 RESPONSIVE)
+========================================= */
+
+@media (min-width: 1600px) and (max-height: 1050px) {
+
+  /* MAIN FOOTER */
+  .footer {
+    padding: 40px 60px 20px;   /* 🔥 reduce height */
+  }
+
+  /* WIDTH FIX */
+  .footer-container {
+    max-width: 1400px;   /* from 1200 → FIXED */
+    gap: 40px;
+  }
+
+  /* TEXT */
+  .footer-left p {
+    font-size: 13px;
+    margin: 10px 0;
+  }
+
+  /* SOCIAL ICONS */
+  .socials {
+    gap: 15px;
+  }
+
+  .socials a {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  /* COLUMNS */
+  .footer-col h4 {
+    margin-bottom: 10px;
+  }
+
+  .footer-col a {
+    font-size: 13px;
+  }
+
+  /* BOTTOM */
+  .footer-bottom {
+    margin-top: 20px;   /* from 40 → FIXED */
+    padding-top: 15px;
+  }
+
+}
