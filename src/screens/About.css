@@ -611,63 +611,72 @@
 
 
 /* =========================================
-   🔥 ABOUT PAGE FIX (1920×1024 NO SCROLL)
+   🔥 ABOUT PAGE FIX (1920×1024 PERFECT)
 ========================================= */
-
 @media (min-width: 1600px) and (max-height: 1050px) {
 
   /* HERO */
   .about-hero {
-    padding: 15px 20px;
+    padding: 10px 20px;
   }
 
   .about-left h1 {
-    font-size: 40px;
+    font-size: 38px;
     margin-bottom: 10px;
   }
 
   .desc {
+    font-size: 14px;
     margin-bottom: 15px;
   }
 
   /* STORY */
   .story {
-    padding: 15px 20px;
+    padding: 10px 20px;
   }
 
   .story-box {
-    padding: 20px 15px;
+    padding: 18px 12px;
   }
 
   .story-boxes {
-    gap: 25px;
+    gap: 20px;
   }
 
-  /* 🔥 BIG FIX (STATS) */
+  /* 🔥 STATS FIX */
   .stats {
-    padding: 20px;
+    padding: 15px;
   }
 
   .stats-container {
-    gap: 100px;   /* from 240 → FIXED */
+    gap: 80px;   /* from 240 → FIXED */
+  }
+
+  .stat h2 {
+    font-size: 28px;
   }
 
   /* TEAM */
   .team {
-    padding: 10px 20px 40px;   /* reduce bottom space */
+    padding: 10px 20px 30px;  /* reduce bottom */
   }
 
   .team h2 {
-    margin-bottom: 25px;
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 
   .team-card {
-    height: 340px;
+    height: 320px;
   }
 
-  /* 🔥 MAIN PROBLEM FIX */
+  /* 🔥 NEWSLETTER (MAIN PROBLEM) */
   .newsletter {
-    padding: 40px 20px;   /* from 100 → FIXED */
+    padding: 30px 20px;   /* from 100 → FIXED */
+  }
+
+  .newsletter h2 {
+    font-size: 26px;
   }
 
 }

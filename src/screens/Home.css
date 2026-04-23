@@ -1186,48 +1186,76 @@ color: black;
   }
 
 }
-/* =========================================
-   🔥 FIX EXTRA SCROLL (1920×1024)
-========================================= */
 
+/* =========================================
+   🔥 1920×1024 HEIGHT FIX (HOME PAGE)
+========================================= */
 @media (min-width: 1600px) and (max-height: 1050px) {
 
+  /* HERO */
   .hero {
-    min-height: 100vh;   /* fit screen */
-    padding: 10px 20px;  /* reduce spacing */
-    gap: 20px;           /* reduce vertical gap */
-  }
-
-  .carousel {
-    height: 360px;       /* reduce from 420 */
+    gap: 20px;
+    padding: 10px;
   }
 
   .main-heading {
-    font-size: 52px;     /* slightly smaller */
+    font-size: 44px;
   }
 
-}
-
-/* =========================================
-   🔥 GLOBAL HEIGHT FIX (ALL PAGES)
-========================================= */
-
-@media (min-width: 1600px) and (max-height: 1050px) {
-
-  section {
-    padding: 30px 20px !important;   /* reduce all sections */
+  .carousel {
+    height: 320px;   /* 🔥 reduce from 420 */
   }
 
-  h1 {
-    font-size: 85% !important;
+  /* BRANDS */
+  .home-brands-section {
+    padding: 20px;
   }
 
-  h2 {
-    font-size: 90% !important;
+  /* METHODOLOGY */
+  .methodology {
+    padding: 20px;
   }
 
-  p {
-    font-size: 95% !important;
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .wrapper {
+    height: 240px;
+  }
+
+  /* RESULTS */
+  .results {
+    padding: 15px;
+  }
+
+  .result-card img {
+    height: 240px;
+  }
+
+  /* PROCESS (IMPORTANT FIX) */
+  .home-timeline {
+    height: auto;
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  /* WHY */
+  .why {
+    padding: 40px 20px;
+  }
+
+  .why-container {
+    gap: 60px;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials {
+    padding: 40px 20px;
+  }
+
+  .test-grid {
+    gap: 20px;
   }
 
 }

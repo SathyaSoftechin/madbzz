@@ -258,24 +258,35 @@
 
 }
 
-
-/* ===============================
-   🔥 1920×1024 FIX (HEIGHT BASED)
-=============================== */
+/* =========================================
+   🔥 FINAL FOOTER FIX (1920×1024 PERFECT)
+========================================= */
 @media (min-width: 1600px) and (max-height: 1050px) {
 
+  /* MAIN */
   .footer {
-    padding: 35px 60px 15px;   /* reduce height */
+    padding: 30px 60px 15px;   /* 🔥 compact height */
   }
 
+  /* GRID BALANCE FIX */
   .footer-container {
-    max-width: 1500px;   /* expand width */
+    max-width: 1500px;
+    margin: auto;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr; /* 🔥 balanced */
     gap: 40px;
   }
 
+  /* LEFT TEXT */
   .footer-left p {
     font-size: 13px;
     margin: 10px 0;
+    max-width: 350px;   /* 🔥 prevent stretching */
+  }
+
+  /* SOCIAL */
+  .socials {
+    gap: 15px;
   }
 
   .socials a {
@@ -284,8 +295,18 @@
     font-size: 18px;
   }
 
+  /* COLUMN TEXT */
+  .footer-col h4 {
+    margin-bottom: 10px;
+  }
+
+  .footer-col a {
+    font-size: 13px;
+  }
+
+  /* BOTTOM */
   .footer-bottom {
-    margin-top: 15px;
+    margin-top: 15px;   /* 🔥 reduce from 40 */
     padding-top: 10px;
     font-size: 12px;
   }

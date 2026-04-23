@@ -360,67 +360,62 @@ MAIN CONTAINER
 
 }
 
-
 /* =========================================
-   🔥 EXPERT PAGE FIX (1920×1024 NO SCROLL)
+   🔥 EXPERT PERFECT FIX (1920×1024)
 ========================================= */
-
 @media (min-width: 1600px) and (max-height: 1050px) {
 
-  /* CONTAINER */
+  /* 🔥 REMOVE FORCED HEIGHT */
   .expert-container {
-    padding: 20px 60px;
+    min-height: auto;      /* 🔥 VERY IMPORTANT */
+    padding: 15px 60px;
   }
 
-  /* 🔥 MAIN LAYOUT FIX */
+  /* MAIN LAYOUT */
   .expert-content {
-    gap: 80px;              /* from 180 → FIXED */
+    gap: 60px;
   }
 
   .expert-left {
-    margin-left: 0;         /* 🔥 remove shift */
-  }
-
-  /* IMAGE */
-  .expert-left {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
+    margin-left: 0;
   }
 
   /* TEXT */
   .expert-right h1 {
-    font-size: 40px;
-    margin-bottom: 8px;
+    font-size: 36px;
+    margin-bottom: 5px;
   }
 
   .expert-right p {
-    font-size: 16px;
+    font-size: 15px;
   }
 
-  /* 🔥 BRANDS FIX */
+  /* 🔥 BRANDS */
   .expert-brands {
-    margin-top: 40px;       /* from 80 → FIXED */
+    margin-top: 25px;   /* reduce more */
   }
 
   .expert-brands-grid {
-    gap: 15px;
+    gap: 12px;
   }
 
   .expert-brand-box {
-    padding: 15px;
+    padding: 12px;
   }
 
-  /* 🔥 CTA FIX (MAIN PROBLEM) */
+  /* 🔥 CTA (MAIN FIX) */
   .expert-cta {
-    margin-top: 40px;
+    margin-top: 25px;
   }
 
   .expert-cta-box {
-    padding: 30px;          /* from 60 → FIXED */
+    padding: 20px;   /* 🔥 reduce more */
   }
 
   .expert-cta-box h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
 }
